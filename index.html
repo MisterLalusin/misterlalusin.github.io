@@ -1,4 +1,4 @@
-<!--Created on June 23,2019 • Updated on July 02,2020 • Developer/s:MisterLalusin-->
+<!--Created on June 23,2019 • Updated on July 10,2020 • Developer/s:MisterLalusin-->
 <html>
 	<head>
 		<title>MisterLalusin</title>
@@ -167,6 +167,65 @@
 				margin-left:10px;
 				border-color:#2C3B4E;
 				border-style:solid;
+			}
+			#engrDiv {
+				-moz-animation: cssAnimation 0s ease-in 5s forwards;
+				/* Firefox */
+				-webkit-animation: cssAnimation 0s ease-in 5s forwards;
+				/* Safari and Chrome */
+				-o-animation: cssAnimation 0s ease-in 5s forwards;
+				/* Opera */
+				animation: cssAnimation 0s ease-in 5s forwards;
+				-webkit-animation-fill-mode: forwards;
+				animation-fill-mode: forwards;
+				position:fixed;
+				right:46;
+				bottom:0;
+				width:120px;
+				height:39px;
+				box-shadow: 0px 0px    15px rgba(0,0,0,0.6);
+				-moz-box-shadow: 0px 0px    15px rgba(0,0,0,0.6);
+				-webkit-box-shadow: 0px 0px    15px rgba(0,0,0,0.6);
+				-o-box-shadow: 0px 0px    15px rgba(0,0,0,0.6);
+				border-top-left-radius: 10px;
+				border-top-right-radius: 10px;
+			}
+			#engrImages {
+				-moz-animation: cssAnimation 0s ease-in 5s forwards;
+				/* Firefox */
+				-webkit-animation: cssAnimation 0s ease-in 5s forwards;
+				/* Safari and Chrome */
+				-o-animation: cssAnimation 0s ease-in 5s forwards;
+				/* Opera */
+				animation: cssAnimation 0s ease-in 5s forwards;
+				-webkit-animation-fill-mode: forwards;
+				animation-fill-mode: forwards;
+				position:fixed;
+				position:fixed;
+				right:22;
+				bottom:0;
+				width:175px;
+				height:40px;
+			}
+			#engrImages img {
+				width:30px;
+				position:relative;
+				left:30px;
+				padding:5px;
+			}
+			@keyframes cssAnimation {
+				to {
+					width:0;
+					height:0;
+					overflow:hidden;
+				}
+			}
+			@-webkit-keyframes cssAnimation {
+				to {
+					width:0;
+					height:0;
+					visibility:hidden;
+				}
 			}
 		</style>
 	</head>
@@ -381,6 +440,15 @@
 				<table>
 				<br><br>
 			</center>
+		</div>
+		<div id='engrDiv'>
+			<table width="100%" cellspacing="0">
+				<tr id="engrImages">
+					<td><img style="background:#181818;border-top-left-radius: 10px;" src="images\bscpe.png"></img></td>
+					<td><img style="background:#202020;margin:-2px" src="images\bsee.png"></img></td>
+					<td><img style="background:#282828;border-top-right-radius: 10px;" src="images\bsme.png"></img></td>
+				</tr>
+			</table>
 		</div>
 	</body>
 </html>

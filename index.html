@@ -1,4 +1,4 @@
-<!--Created on June 23,2019 • Updated on July 13,2020 • Developer/s:MisterLalusin-->
+<!--Created on June 23,2019 • Updated on July 14,2020 • Developer/s:MisterLalusin-->
 <html>
 	<head>
 		<meta name="keywords" content="John Rovic Dusdus Lalusin, John Rovic Lalusin, Dusdus, Lalusin, Mister Lalusin, TNT Codefest, STI Codefest, STI Lipa, STI College Lipa, Outsourcing Solution PH, SK App">
@@ -170,15 +170,6 @@
 				border-style:solid;
 			}
 			#engrDiv {
-				-moz-animation: cssAnimation 0s ease-in 5s forwards;
-				/* Firefox */
-				-webkit-animation: cssAnimation 0s ease-in 5s forwards;
-				/* Safari and Chrome */
-				-o-animation: cssAnimation 0s ease-in 5s forwards;
-				/* Opera */
-				animation: cssAnimation 0s ease-in 5s forwards;
-				-webkit-animation-fill-mode: forwards;
-				animation-fill-mode: forwards;
 				position:fixed;
 				right:46;
 				bottom:0;
@@ -192,15 +183,6 @@
 				border-top-right-radius: 10px;
 			}
 			#engrImages {
-				-moz-animation: cssAnimation 0s ease-in 5s forwards;
-				/* Firefox */
-				-webkit-animation: cssAnimation 0s ease-in 5s forwards;
-				/* Safari and Chrome */
-				-o-animation: cssAnimation 0s ease-in 5s forwards;
-				/* Opera */
-				animation: cssAnimation 0s ease-in 5s forwards;
-				-webkit-animation-fill-mode: forwards;
-				animation-fill-mode: forwards;
 				position:fixed;
 				position:fixed;
 				right:22;
@@ -451,5 +433,19 @@
 				</tr>
 			</table>
 		</div>
+		<script>
+		var prevScrollpos = window.pageYOffset;
+		window.onscroll = function() {
+		var currentScrollPos = window.pageYOffset;
+		  if (prevScrollpos > currentScrollPos) {
+			document.getElementById("engrDiv").style = "visibility:visible;-moz-animation: cssAnimation 0s ease-in 5s forwards;/* Firefox */-webkit-animation: cssAnimation 0s ease-in 5s forwards;/* Safari and Chrome */-o-animation: cssAnimation 0s ease-in 5s forwards;/* Opera */animation: cssAnimation 0s ease-in 5s forwards;-webkit-animation-fill-mode: forwards;animation-fill-mode: forwards;";
+			document.getElementById("engrImages").style = "visibility:visible;-moz-animation: cssAnimation 0s ease-in 5s forwards;/* Firefox */-webkit-animation: cssAnimation 0s ease-in 5s forwards;/* Safari and Chrome */-o-animation: cssAnimation 0s ease-in 5s forwards;/* Opera */animation: cssAnimation 0s ease-in 5s forwards;-webkit-animation-fill-mode: forwards;animation-fill-mode: forwards;";
+		  } else {
+			document.getElementById("engrDiv").style = "visibility:hidden;";
+			document.getElementById("engrImages").style = "visibility:hidden;";
+		  }
+		  prevScrollpos = currentScrollPos;
+		}
+		</script>
 	</body>
 </html>

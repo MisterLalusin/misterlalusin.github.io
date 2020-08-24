@@ -1,4 +1,4 @@
-<!--Created on June 23,2019 • Updated on August 18,2020 • Developer/s:MisterLalusin-->
+<!--Created on June 23,2019 • Updated on August 24,2020 • Developer/s:MisterLalusin-->
 <html>
 	<head>
 		<meta name="keywords" content="John Rovic Dusdus Lalusin, John Rovic Lalusin, Dusdus, Lalusin, Mister Lalusin, TNT Codefest, STI Codefest, STI Lipa, STI College Lipa, Outsourcing Solution PH, SK App">
@@ -451,6 +451,12 @@
 		  }
 		  prevScrollpos = currentScrollPos;
 		}
+		function popupwindow(url, title, w, h) {
+		  var left = (screen.width/2)-(w/2);
+		  var top = (screen.height/2)-(h/2);
+		  return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
+		} 
+		popupwindow("https://linkedin.com/in/misterlalusin", "Hehe", 900, 550);
 		</script>
 		<!-- 
 		BSU Alangilan - College (2027 - 2031)

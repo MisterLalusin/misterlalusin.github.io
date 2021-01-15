@@ -56,14 +56,14 @@ body {
  border: 0px solid black;
  border-radius: 4px;
 }
-			::-webkit-scrollbar {
-				width: 0px;
-			}
-			::-webkit-scrollbar-track {
-				box-shadow: inset 0 0 15px #2C3B4E; 
-				border-radius: 10px;
-			}
-			::-webkit-scrollbar-thumb {
-				background: #2C3B4E; 
-				border-radius: 10px;
-			}
+::-webkit-scrollbar {
+	width: 0px;
+}
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 0px #ffffff; 
+	border-radius: 0px;
+}
+::-webkit-scrollbar-thumb {
+	background: #ffffff; 
+	border-radius: 0px;
+}

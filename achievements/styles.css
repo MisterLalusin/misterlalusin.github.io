@@ -1,0 +1,69 @@
+body {
+ background-color:white;
+}
+.info001 img {
+ margin:5px;
+}
+.info001 li {
+ text-align:center;
+ position:relative;
+}
+.info001 {
+ position:relative;
+ top:0;
+ left:0;
+ right:0;
+ bottom:0;
+ margin:auto;
+ width:876px;
+}
+.info001 h2 {
+ margin:5px;
+}
+.image001 {
+ float: left;
+ margin: 0px;
+}
+.image001 img {
+ position:absolute;
+ }
+.paragraph001 {
+ text-align:center;
+ position:relative;
+ font-size:6px;
+}
+#logo {
+ width: 22px;
+ height:22px;
+ vertical-align: middle;
+ padding:2px;
+ border: 1px solid black;
+ border-radius: 4px;
+ margin-left:-4px;
+}
+#profile {
+ width: 169px;
+ height:169px;
+ padding:2px;
+ border: 1px solid black;
+ border-radius: 4px;
+ margin-left:-4px;
+}
+#achievments {
+ width: 155px;
+ height:155px;
+ padding:2px;
+ border: 0px solid black;
+ border-radius: 4px;
+}
+			::-webkit-scrollbar {
+				width: 0px;
+			}
+			::-webkit-scrollbar-track {
+				box-shadow: inset 0 0 15px #2C3B4E; 
+				border-radius: 10px;
+			}
+			::-webkit-scrollbar-thumb {
+				background: #2C3B4E; 
+				border-radius: 10px;
+			}

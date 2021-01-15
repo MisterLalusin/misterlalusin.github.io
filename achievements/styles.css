@@ -27,11 +27,6 @@ body {
 .image001 img {
  position:absolute;
  }
-.paragraph001 {
- text-align:center;
- position:relative;
- font-size:6px;
-}
 #logo {
  width: 22px;
  height:22px;
@@ -49,7 +44,7 @@ body {
  border-radius: 4px;
  margin-left:-4px;
 }
-#achievments {
+#achievements {
  width: 155px;
  height:155px;
  padding:2px;
@@ -66,4 +61,23 @@ body {
 ::-webkit-scrollbar-thumb {
 	background: #ffffff; 
 	border-radius: 0px;
+}
+.info002 img {
+ margin:5px;
+}
+.info002 li {
+ text-align:center;
+ position:relative;
+}
+.info002 {
+ position:relative;
+ top:0;
+ left:0;
+ right:0;
+ bottom:0;
+ margin:auto;
+ width:1045px;
+}
+.info002 h2 {
+ margin:5px;
 }

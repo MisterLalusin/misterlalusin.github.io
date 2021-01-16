@@ -18,11 +18,14 @@
 	else if (width >= 376) {
 	 document.write('<style>body {-moz-transform: scale(0.35, 0.35); zoom: 0.35; zoom: 35%;}</style>');
 	}
-	else if (width >= 260) {
+	else if (width >= 277) {
 	 document.write('<style>body {-moz-transform: scale(0.35, 0.35); zoom: 0.35; zoom: 29%;}</style>');
 	}
 	else if (width >= 276) {
 	 document.write('<style>body {-moz-transform: scale(0.35, 0.35); zoom: 0.35; zoom: 25%;}</style>');
+	}
+	else if (width >= 260) {
+	 document.write('<style>body {-moz-transform: scale(0.35, 0.35); zoom: 0.35; zoom: 26%;}</style>');
 	}
 	else {
 	 document.write('<style>body {-moz-transform: scale(0.35, 0.35); zoom: 0.35; zoom: 25%;}</style>');

@@ -1,4 +1,4 @@
-<!--Created on June 23,2019 • Updated on Jul 06,2021 • Developer/s:MisterLalusin-->
+<!--Created on June 23,2019 • Updated on Jul 09,2021 • Developer/s:MisterLalusin-->
 <html>
 	<head>
 		<meta name="keywords" content="John Rovic Dusdus Lalusin, John Rovic Lalusin, Dusdus, Lalusin, Mister Lalusin, TNT Codefest, STI Codefest, STI Lipa, STI College Lipa, Outsourcing Solution PH, SK App, IT in Mobile App And Web Development, IT MAWD, MAWD, BS In Computer Engineering, Computer Engineering">
@@ -477,9 +477,21 @@
 		<div id='engrDiv'>
 			<table width="100%" cellspacing="0">
 				<tr id="engrImages">
-					<td><img style="background:#181818;border-top-left-radius: 10px;" src="images\bscpe.png"></img></td>
-					<td><img style="background:#202020;margin:-2px" src="images\bsee.png"></img></td>
-					<td><img style="background:#282828;border-top-right-radius: 10px;" src="images\bsme.png"></img></td>
+					<script>
+						const queryString = window.location.search;
+						const urlParams = new URLSearchParams(queryString);
+						const field = urlParams.get('engr')
+						if (field == 'cpe') {//https://misterlalusin.github.io/?engr=cpe
+							document.write('<td><img style="background:#181818;border-top-left-radius: 10px;" src="images\\bscpe_active.png"></img></td>');
+							document.write('<td><img style="background:#202020;margin:-2px" src="images\\bsee.png"></img></td>');
+							document.write('<td><img style="background:#282828;border-top-right-radius: 10px;" src="images\\bsme.png"></img></td>')
+						}
+						else {//https://misterlalusin.github.io/
+							document.write('<td><img style="background:#181818;border-top-left-radius: 10px;" src="images\\bscpe.png"></img></td>');
+							document.write('<td><img style="background:#202020;margin:-2px" src="images\\bsee.png"></img></td>');
+							document.write('<td><img style="background:#282828;border-top-right-radius: 10px;" src="images\\bsme.png"></img></td>')
+						}
+					</script>
 				</tr>
 			</table>
 		</div>

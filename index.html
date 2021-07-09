@@ -486,6 +486,20 @@
 							document.write('<td><img style="background:#202020;margin:-2px" src="images\\bsee.png"></img></td>');
 							document.write('<td><img style="background:#282828;border-top-right-radius: 10px;" src="images\\bsme.png"></img></td>')
 						}
+						else if (field == 'ee') {//https://misterlalusin.github.io/?engr=ee
+							var appBanners = document.getElementsByClassName('content');
+
+							for (var i = 0; i < appBanners.length; i ++) {
+								appBanners[i].style.display = 'none';
+							}
+						}
+						else if (field == 'me') {//https://misterlalusin.github.io/?engr=me
+							var appBanners = document.getElementsByClassName('content');
+
+							for (var i = 0; i < appBanners.length; i ++) {
+								appBanners[i].style.display = 'none';
+							}
+						}
 						else {//https://misterlalusin.github.io/
 							document.write('<td><img style="background:#181818;border-top-left-radius: 10px;" src="images\\bscpe.png"></img></td>');
 							document.write('<td><img style="background:#202020;margin:-2px" src="images\\bsee.png"></img></td>');

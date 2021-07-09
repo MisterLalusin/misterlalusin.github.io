@@ -480,12 +480,13 @@
 					<script>
 						const queryString = window.location.search;
 						const urlParams = new URLSearchParams(queryString);
-						const field = urlParams.get('engr').toLowerCase()
+						const field = urlParams.get('engr');
 						if (field == 'cpe') {//https://misterlalusin.github.io/?engr=cpe
 							document.write('<td><img style="background:#181818;border-top-left-radius: 10px;" src="images\\bscpe_active.png"></img></td>');
 							document.write('<td><img style="background:#202020;margin:-2px" src="images\\bsee.png"></img></td>');
 							document.write('<td><img style="background:#282828;border-top-right-radius: 10px;" src="images\\bsme.png"></img></td>')
 						}
+						/*
 						else if (field == 'ee') {//https://misterlalusin.github.io/?engr=ee
 							var contentCPE = document.getElementsByClassName('content');
 
@@ -500,6 +501,7 @@
 								contentCPE[i].style.display = 'none';
 							}
 						}
+						*/
 						else {//https://misterlalusin.github.io/
 							document.write('<td><img style="background:#181818;border-top-left-radius: 10px;" src="images\\bscpe.png"></img></td>');
 							document.write('<td><img style="background:#202020;margin:-2px" src="images\\bsee.png"></img></td>');
@@ -509,13 +511,14 @@
 				</tr>
 			</table>
 		</div>
-		<!--Next Career-->
+		<!--
 		<style>
 		</style>
 		<div class="content">
 			<center>
 			</center>
 		</div>
+		-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script>
 		var prevScrollpos = window.pageYOffset;

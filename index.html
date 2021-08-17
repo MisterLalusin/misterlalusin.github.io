@@ -1,4 +1,4 @@
-<!--Created on June 23,2019 • Updated on Aug 16,2021 • Developer/s:MisterLalusin-->
+<!--Created on June 23,2019 • Updated on Aug 18,2021 • Developer/s:MisterLalusin-->
 <html>
 	<head>
 		<meta name="keywords" content="John Rovic Dusdus Lalusin, John Rovic Lalusin, Dusdus, Lalusin, Mister Lalusin, TNT Codefest, STI Codefest, STI Lipa, STI College Lipa, Outsourcing Solution PH, SK App, IT in Mobile App And Web Development, IT MAWD, MAWD, BS In Computer Engineering, Computer Engineering">
@@ -486,6 +486,7 @@
 						const urlParams = new URLSearchParams(queryString);
 						const field = urlParams.get('engr');
 						const achievements = urlParams.get('achv');
+						const career = urlParams.get('car');
 						if (field == 'cpe') {//https://misterlalusin.github.io/?engr=cpe
 							document.write('<td><img style="background:#181818;border-top-left-radius: 10px;" src="images\\bscpe_active.png"></img></td>');
 							document.write('<td><img style="background:#202020;margin:-2px" src="images\\bsee.png"></img></td>');
@@ -507,7 +508,7 @@
 							}
 						}
 						*/
-						else if (achievements == null) {//https://misterlalusin.github.io/
+						else if (achievements == null && career == null) {//https://misterlalusin.github.io/
 							document.write('<td><img style="background:#181818;border-top-left-radius: 10px;" src="images\\bscpe.png"></img></td>');
 							document.write('<td><img style="background:#202020;margin:-2px" src="images\\bsee.png"></img></td>');
 							document.write('<td><img style="background:#282828;border-top-right-radius: 10px;" src="images\\bsme.png"></img></td>')
@@ -557,10 +558,14 @@
 			const queryStringACH = window.location.search;
 			const urlParamsACH = new URLSearchParams(queryString);
 			const fieldACH = urlParamsACH.get('achv');
+			const fieldCAR = urlParamsACH.get('car');
 			if (fieldACH == 'awards') {//https://misterlalusin.github.io/?achv=awards
 				document.body.innerHTML = "";
 				var a ="<style>* {font-family: 'Arial';font-size:12;}body {background-color:white;}.achievementsClass {display: block;}.info001 img {margin:5px;}.info001 li {text-align:center;position:relative;}.info001 {position:relative;top:0;left:0;right:0;bottom:0;margin:auto;width:876px;}.info001 h2 {margin:5px;}.image001 {float: left;margin: 0px;}.image001 img {position:absolute;}#logo {width: 22px;height:22px;vertical-align: middle;padding:2px;border: 1px solid black;border-radius: 4px;margin-left:-4px;}#profile {width: 169px;height:169px;padding:2px;border: 1px solid black;border-radius: 4px;margin-left:-4px;}#achievements {width: 155px;height:155px;padding:2px;border: 0px solid black;border-radius: 4px;}::-webkit-scrollbar {width: 0px;}::-webkit-scrollbar-track {box-shadow: inset 0 0 0px #ffffff; border-radius: 0px;}::-webkit-scrollbar-thumb {background: #ffffff; border-radius: 0px;}.info002 img {margin:5px;}.info002 li {text-align:center;position:relative;}.info002 {position:relative;top:0;left:0;right:0;bottom:0;margin:auto;width:1045px;}.info002 h2 {margin:5px;}@media only screen and (max-width: 1169px) { iframe { display: none; } }</style>";
 				document.write(a);
+			}
+			else if (fieldCAR == 'se') {//https://misterlalusin.github.io/?car=se
+				window.location.href = "/softwareengineering";
 			}
 		</script>
 		<style>

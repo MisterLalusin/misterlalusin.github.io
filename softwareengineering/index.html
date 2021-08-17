@@ -1,6 +1,7 @@
-<!--Created on November 23,2018 • Updated on Jun 20,2021 • Developer/s:MisterLalusin-->
+<!--Created on November 23,2018 • Updated on Aug 18,2021 • Developer/s:MisterLalusin-->
 <html>
  <head><title>Software Engineering</title></head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <style>
   .gallery001 img {
    max-width:420px;
@@ -36,6 +37,104 @@
    position:relative;
    font-size:8px;
   }
+	.icon {
+	font-size: 10px;
+	padding-right: 5px;
+	}
+  .proCar-mains-page-title {
+	font-family: Nexa W01 Heavy;
+	font-size: 30px;
+	color: #04202E;
+	font-weight: 700;
+	}
+	.proCar-title-span {
+	font-family: Helvetica Neue LT Pro Roman !important;
+	font-size: 16px !important;
+	color: #fff !important;
+	font-weight: 700 !important;
+	display: inline-block;
+	background-color: black;
+	position: relative;
+	bottom: -10px;
+	left:16px;
+	}
+	.proCar-content {
+	font-family: Helvetica Neue LT Pro Roman;
+	color: #000;
+	font-weight: 400;
+	display: none;
+	background-color: white;
+	margin-top: -9px;
+	padding-bottom: 20px;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+	}
+	.freBus-mains-page-title {
+	font-family: Nexa W01 Heavy;
+	font-size: 30px;
+	color: #04202E;
+	font-weight: 700;
+	}
+	.freBus-title-span {
+	font-family: Helvetica Neue LT Pro Roman !important;
+	font-size: 16px !important;
+	color: #fff !important;
+	font-weight: 700 !important;
+	display: inline-block;
+	background-color: black;
+	position: relative;
+	bottom: -10px;
+	left:16px;
+	}
+	.freBus-content {
+	font-family: Helvetica Neue LT Pro Roman;
+	color: #000;
+	font-weight: 400;
+	display: none;
+	background-color: white;
+	margin-top: -9px;
+	padding-bottom: 20px;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+	}
+	.perSch-mains-page-title {
+	font-family: Nexa W01 Heavy;
+	font-size: 30px;
+	color: #04202E;
+	font-weight: 700;
+	}
+	.perSch-title-span {
+	font-family: Helvetica Neue LT Pro Roman !important;
+	font-size: 16px !important;
+	color: #fff !important;
+	font-weight: 700 !important;
+	display: inline-block;
+	background-color: black;
+	position: relative;
+	bottom: -10px;
+	left:16px;
+	}
+	.perSch-content {
+	font-family: Helvetica Neue LT Pro Roman;
+	color: #000;
+	font-weight: 400;
+	display: none;
+	background-color: white;
+	margin-top: -9px;
+	padding-bottom: 20px;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+	}
+	hr {
+	border: 2px solid black;
+	border-radius: 5px;
+	}
+	body {
+		background-color: #f0f0f0;
+	}
+	.layerWhite {
+		background-color: white;
+		margin-top: -9px;
+		padding-bottom: 20px;
+		box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+	}
   </style>
   <script>
   function fitZoom() {
@@ -63,120 +162,176 @@
 	}
 	}
 	fitZoom();
+	$(document).ready(function() {
+	$(this).on("click", ".proCar-title", function() {
+		$(this).parent().find(".proCar-content").toggle();
+	});
+	});
+	$(document).ready(function() {
+        $(this).on("click", ".freBus-title", function() {
+            $(this).parent().find(".freBus-content").toggle();
+    });
+    });
+	$(document).ready(function() {
+        $(this).on("click", ".perSch-title", function() {
+            $(this).parent().find(".perSch-content").toggle();
+    });
+    });
   </script>
    <body>
 	<div class="gallery001">
 	 <br>
-	 <!--Native Mobile App-->
-	 <h2><tt>Android Application</tt></h2>
-	 <table>
-	  <td><img src="Android Application/0001.png" class="image001"><tt><p class="paragraph001">Historical Fact Boy</p></tt></td>
-	  <td><img src="Android Application/0002.png" class="image001"><tt><p class="paragraph001">ELMS Hub</p></tt></td>
-	  <td><img src="Android Application/0003.png" class="image001"><tt><p class="paragraph001">Ciphcode</p></tt></td>
-	  <td><img src="Android Application/0004.png" class="image001"><tt><p class="paragraph001">UHack</p></tt></td>
-	  <td><img src="Android Application/0005.png" class="image001"><tt><p class="paragraph001">iCon</p></tt></td>
-	 </table>
-	 <h2><tt>iOS Application</tt></h2>
-	 <table>
-	  <td><img src="iOS Application/0001.png" class="image001"><tt><p class="paragraph001">Pitaka</p></tt></td>
-	 </table>
-	 <!--Cross Platform-->
-	 <h2><tt>Flutter</tt></h2>
-	 <table>
-	  <td><img src="Flutter/0001.jpg" class="image001"><tt><p class="paragraph001">August Rush</p></tt></td>
-	 </table>
-	 <h2><tt>React Native</tt></h2>
-	 <table>
-	  <td><img src="React Native/0001.jpg" class="image001"><tt><p class="paragraph001">Anabel</p></tt></td>
-	 </table>
-	 <!--Desktop Applications-->
-	 <h2><tt>Dot Net</tt></h2>
-	 <table>
-	  <td><img src="Dot Net/0001.png" class="image001"><tt><p class="paragraph001">STI Front Line Windows App</p></tt></td>
-	 </table>	
-	 <!--GUI-->
-	 <h2><tt>Java</tt></h2>
-	 <table>
-	  <td><img src="Java/0001.PNG" class="image001"><tt><p class="paragraph001">Kumamon</p></tt></td>
-	  <td><img src="Java/0002.png" class="image001"><tt><p class="paragraph001">nCoV Antivirus</p></tt></td>
-	 </table>
-	 <h2><tt>Python</tt></h2>
-	 <table>
-	  <td><img src="Python/0001.png" class="image001"><tt><p class="paragraph001">Fredie - The Physics Guy</p></tt></td>
-	 </table>
-	 <h2><tt>HTML</tt></h2>
-	 <table>
-	  <td><img src="HTML/0001.PNG" class="image001"><tt><p class="paragraph001">Ph1 Luneta Os 4.0</p></tt></td>
-	  <td><img src="HTML/0002.PNG" class="image001"><tt><p class="paragraph001">Ph1 Luneta Os 6.1</p></tt></td>
-	 </table>
-	 <table>
-	  <td><img src="HTML/0003.png" class="image001"><tt><p class="paragraph001">Ph1 Luneta Phone 1.0</p></tt></td>
-	  <td><img src="HTML/0004.PNG" class="image001"><tt><p class="paragraph001">Enverga San Antonio</p></tt></td>
-	  <td><img src="HTML/0005.png" class="image001"><tt><p class="paragraph001">Ph1 Luneta Phone 2.0</p></tt></td>
-	 </table>
-	 <table>
-	  <td><img src="HTML/0006.PNG" class="image001"><tt><p class="paragraph001">Lakbay Pinas</p></tt></td>
-	  <td><img src="HTML/0007.png" class="image001"><tt><p class="paragraph001">Ph1 Luneta Phone 3.0</p></tt></td>
-	 </table>
-	 <table>
-	  <td><img src="HTML/0008.PNG" class="image001"><tt><p class="paragraph001">Xtern</p></tt></td>
-	  <td><img src="HTML/0009.png" class="image001"><tt><p class="paragraph001">IDecide</p></tt></td>
-	 </table>
-	 <table>
-	  <td><img src="HTML/0010.png" class="image001"><tt><p class="paragraph001">Mister Lalusin</p></tt></td>
-	 </table>
-	 <h2><tt>PHP</tt></h2>
-	 <table>
-	  <td><img src="PHP/0001.png" class="image001"><tt><p class="paragraph001">STI Front Line PHP Website</p></tt></td>
-	  <td><img src="PHP/0002.png" class="image001"><tt><p class="paragraph001">Zerge Engine</p></tt></td>
-	 </table>
-	 <!--Competition-->
-	 <h2><tt>TNT Codefest</tt></h2>
-	 <table>
-	  <td><img src="TNT Codefest/0001.png" class="image001"><tt><p class="paragraph001">STI Goals</p></tt></td>
-	  <td><img src="TNT Codefest/0002.png" class="image001"><tt><p class="paragraph001">La Jamayca</p></tt></td>
-	  <td><img src="TNT Codefest/0003.png" class="image001"><tt><p class="paragraph001">La Jamayca</p></tt></td>
-	  <td><img src="TNT Codefest/0004.png" class="image001"><tt><p class="paragraph001">STI-STF</p></tt></td>
-	  <td><img src="TNT Codefest/0005.png" class="image001"><tt><p class="paragraph001">STI VITA</p></tt></td>
-	 </table>
-	 <table>
-	  <td><img src="TNT Codefest/0006.png" class="image001"><tt><p class="paragraph001">STI GG</p></tt></td>
-	  <td><img src="TNT Codefest/0007.png" class="image001"><tt><p class="paragraph001">STINTEL</p></tt></td>
-	  <td><img src="TNT Codefest/0008.png" class="image001"><tt><p class="paragraph001">I-Checked</p></tt></td>
-	 </table>
-	 <table>
-	  <td><img src="TNT Codefest/0009.jpg" class="image001"><tt><p class="paragraph001">STI Organizer</p></tt></td>
-	  <td><img src="TNT Codefest/0010.jpg" class="image001"><tt><p class="paragraph001">Sigma</p></tt></td>
-	  <td><img src="TNT Codefest/0011.jpg" class="image001"><tt><p class="paragraph001">Amigo</p></tt></td>
-	  <td><img src="TNT Codefest/0012.jpg" class="image001"><tt><p class="paragraph001">Atlas</p></tt></td>
-	  <td><img src="TNT Codefest/0013.jpg" class="image001"><tt><p class="paragraph001">Tina</p></tt></td>
-	  <td><img src="TNT Codefest/0014.jpg" class="image001"><tt><p class="paragraph001">STI-MSC</p></tt></td>
-	 </table>
-	 <!--Work-->
-	 <h2><tt>Freelancing</tt></h2>
-	 <table>
-	  <td><img src="Freelancing/0001.png" class="image001"><tt><p class="paragraph001">SMS</p></tt></td>
-	  <td><img src="Freelancing/0002.png" class="image001"><tt><p class="paragraph001">iSakay App</p></tt></td>
-	  <td><img src="Freelancing/0003.png" class="image001"><tt><p class="paragraph001">SAK Mobile</p></tt></td>
-	  <td><img src="Freelancing/0004.png" class="image001"><tt><p class="paragraph001">BSU Meneses Campus Attendance Monitoring System</p></tt></td>
-	 </table>
-	 <table>
-	  <td><img src="Freelancing/0005.jpg" class="image001"><tt><p class="paragraph001">Ateneo Art Gallery</p></tt></td>
-	  <td><img src="Freelancing/0006.jpg" class="image001"><tt><p class="paragraph001">Journey To History</p></tt></td>
-	  <td><img src="Freelancing/0007.jpg" class="image001"><tt><p class="paragraph001">Weekly Activities</p></tt></td>
-	  <td><img src="Freelancing/0008.jpg" class="image001"><tt><p class="paragraph001">Harushop</p></tt></td>
-	 </table>
-	 <h2><tt>Business Idea</tt></h2>
-	 <table>
-	  <td><img src="Business Idea/0001.jpg" class="image001"><tt><p class="paragraph001">Calabarzone</p></tt></td>
-	  <td><img src="Business Idea/0002.png" class="image001"><tt><p class="paragraph001">Kwadrado Learning Website</p></tt></td>
-	  <td><img src="Business Idea/0003.jpg" class="image001"><tt><p class="paragraph001">Kwadrado Learning Android App</p></tt></td>
-	 </table>
-	 <h2><tt>Outsourcing Solution PH </tt></h2>
-	 <table>
-	  <td><img src="Outsourcing Solution PH/0001.jpg" class="image001"><tt><p class="paragraph001">SK App</p></tt></td>
-	  <td><img src="Outsourcing Solution PH/0002.png" class="image001"><tt><p class="paragraph001">OutsourcingSolutionPH.com</p></tt></td>
-	 </table>
+	<div class="proCar-tab-content">
+		<div class="proCar-tab-content-body">
+		  <div class="proCar-main">
+			<div class="proCar-title">
+			  <i class="fa fa-chevron-right" aria-hidden="true"></i>
+			  <span class="proCar-title-span"><h2><tt>PROFESSIONAL CAREER ⬇</tt></h2></span>
+			  <hr>
+			</div>
+			<!--<div class="proCar-content">-->
+			<div class="layerWhite">  
+				<h2><tt>Outsourcing Solution PH </tt></h2>
+				<table>
+				<td><img src="Outsourcing Solution PH/0001.jpg" class="image001"><tt><p class="paragraph001">SK App</p></tt></td>
+				<td><img src="Outsourcing Solution PH/0002.png" class="image001"><tt><p class="paragraph001">OutsourcingSolutionPH.com</p></tt></td>
+				</table>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <div class="freBus-tab-content">
+		  <div class="freBus-tab-content-body">
+			<div class="freBus-main">
+			  <div class="freBus-title">
+				<i class="fa fa-chevron-right" aria-hidden="true"></i>
+				<span class="freBus-title-span"><h2><tt>FREELANCING & BUSINESS IDEAS ⬇</tt></h2></span>
+				<hr>
+			  </div>
+			    <!--<div class="freBus-content">-->
+				<div class="layerWhite">  
+				<h2><tt>Freelancing</tt></h2>
+				<table>
+				 <td><img src="Freelancing/0001.png" class="image001"><tt><p class="paragraph001">SMS</p></tt></td>
+				 <td><img src="Freelancing/0002.png" class="image001"><tt><p class="paragraph001">iSakay App</p></tt></td>
+				 <td><img src="Freelancing/0003.png" class="image001"><tt><p class="paragraph001">SAK Mobile</p></tt></td>
+				 <td><img src="Freelancing/0004.png" class="image001"><tt><p class="paragraph001">BSU Meneses Campus Attendance Monitoring System</p></tt></td>
+				</table>
+				<table>
+				 <td><img src="Freelancing/0005.jpg" class="image001"><tt><p class="paragraph001">Ateneo Art Gallery</p></tt></td>
+				 <td><img src="Freelancing/0006.jpg" class="image001"><tt><p class="paragraph001">Journey To History</p></tt></td>
+				 <td><img src="Freelancing/0007.jpg" class="image001"><tt><p class="paragraph001">Weekly Activities</p></tt></td>
+				 <td><img src="Freelancing/0008.jpg" class="image001"><tt><p class="paragraph001">Harushop</p></tt></td>
+				</table>
+				<h2><tt>Business Idea</tt></h2>
+				<table>
+				 <td><img src="Business Idea/0001.jpg" class="image001"><tt><p class="paragraph001">Calabarzone</p></tt></td>
+				 <td><img src="Business Idea/0002.png" class="image001"><tt><p class="paragraph001">Kwadrado Learning Website</p></tt></td>
+				 <td><img src="Business Idea/0003.jpg" class="image001"><tt><p class="paragraph001">Kwadrado Learning Android App</p></tt></td>
+				</table>
+			  </div>
+			</div>
+		  </div>
+		</div>
+        <div class="perSch-tab-content">
+            <div class="perSch-tab-content-body">
+              <div class="perSch-main">
+                <div class="perSch-title">
+                  <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                  <span class="perSch-title-span"><h2><tt>PERSONAL & SCHOOL RELATED ⬇</tt></h2></span>
+                </div>
+				<hr>
+                <!--<div class="perSch-content">-->
+				<div class="layerWhite">  
+					<!--Native Mobile App-->
+					<h2><tt>Android Application</tt></h2>
+					<table>
+					<td><img src="Android Application/0001.png" class="image001"><tt><p class="paragraph001">Historical Fact Boy</p></tt></td>
+					<td><img src="Android Application/0002.png" class="image001"><tt><p class="paragraph001">ELMS Hub</p></tt></td>
+					<td><img src="Android Application/0003.png" class="image001"><tt><p class="paragraph001">Ciphcode</p></tt></td>
+					<td><img src="Android Application/0004.png" class="image001"><tt><p class="paragraph001">UHack</p></tt></td>
+					<td><img src="Android Application/0005.png" class="image001"><tt><p class="paragraph001">iCon</p></tt></td>
+					</table>
+					<h2><tt>iOS Application</tt></h2>
+					<table>
+					<td><img src="iOS Application/0001.png" class="image001"><tt><p class="paragraph001">Pitaka</p></tt></td>
+					</table>
+					<!--Cross Platform-->
+					<h2><tt>Flutter</tt></h2>
+					<table>
+					<td><img src="Flutter/0001.jpg" class="image001"><tt><p class="paragraph001">August Rush</p></tt></td>
+					</table>
+					<h2><tt>React Native</tt></h2>
+					<table>
+					<td><img src="React Native/0001.jpg" class="image001"><tt><p class="paragraph001">Anabel</p></tt></td>
+					</table>
+					<!--Desktop Applications-->
+					<h2><tt>Dot Net</tt></h2>
+					<table>
+					<td><img src="Dot Net/0001.png" class="image001"><tt><p class="paragraph001">STI Front Line Windows App</p></tt></td>
+					</table>	
+					<!--GUI-->
+					<h2><tt>Java</tt></h2>
+					<table>
+					<td><img src="Java/0001.PNG" class="image001"><tt><p class="paragraph001">Kumamon</p></tt></td>
+					<td><img src="Java/0002.png" class="image001"><tt><p class="paragraph001">nCoV Antivirus</p></tt></td>
+					</table>
+					<h2><tt>Python</tt></h2>
+					<table>
+					<td><img src="Python/0001.png" class="image001"><tt><p class="paragraph001">Fredie - The Physics Guy</p></tt></td>
+					</table>
+					<h2><tt>HTML</tt></h2>
+					<table>
+					<td><img src="HTML/0001.PNG" class="image001"><tt><p class="paragraph001">Ph1 Luneta Os 4.0</p></tt></td>
+					<td><img src="HTML/0002.PNG" class="image001"><tt><p class="paragraph001">Ph1 Luneta Os 6.1</p></tt></td>
+					</table>
+					<table>
+					<td><img src="HTML/0003.png" class="image001"><tt><p class="paragraph001">Ph1 Luneta Phone 1.0</p></tt></td>
+					<td><img src="HTML/0004.PNG" class="image001"><tt><p class="paragraph001">Enverga San Antonio</p></tt></td>
+					<td><img src="HTML/0005.png" class="image001"><tt><p class="paragraph001">Ph1 Luneta Phone 2.0</p></tt></td>
+					</table>
+					<table>
+					<td><img src="HTML/0006.PNG" class="image001"><tt><p class="paragraph001">Lakbay Pinas</p></tt></td>
+					<td><img src="HTML/0007.png" class="image001"><tt><p class="paragraph001">Ph1 Luneta Phone 3.0</p></tt></td>
+					</table>
+					<table>
+					<td><img src="HTML/0008.PNG" class="image001"><tt><p class="paragraph001">Xtern</p></tt></td>
+					<td><img src="HTML/0009.png" class="image001"><tt><p class="paragraph001">IDecide</p></tt></td>
+					</table>
+					<table>
+					<td><img src="HTML/0010.png" class="image001"><tt><p class="paragraph001">Mister Lalusin</p></tt></td>
+					</table>
+					<h2><tt>PHP</tt></h2>
+					<table>
+					<td><img src="PHP/0001.png" class="image001"><tt><p class="paragraph001">STI Front Line PHP Website</p></tt></td>
+					<td><img src="PHP/0002.png" class="image001"><tt><p class="paragraph001">Zerge Engine</p></tt></td>
+					</table>
+					<!--Competition-->
+					<h2><tt>TNT Codefest</tt></h2>
+					<table>
+					<td><img src="TNT Codefest/0001.png" class="image001"><tt><p class="paragraph001">STI Goals</p></tt></td>
+					<td><img src="TNT Codefest/0002.png" class="image001"><tt><p class="paragraph001">La Jamayca</p></tt></td>
+					<td><img src="TNT Codefest/0003.png" class="image001"><tt><p class="paragraph001">La Jamayca</p></tt></td>
+					<td><img src="TNT Codefest/0004.png" class="image001"><tt><p class="paragraph001">STI-STF</p></tt></td>
+					<td><img src="TNT Codefest/0005.png" class="image001"><tt><p class="paragraph001">STI VITA</p></tt></td>
+					</table>
+					<table>
+					<td><img src="TNT Codefest/0006.png" class="image001"><tt><p class="paragraph001">STI GG</p></tt></td>
+					<td><img src="TNT Codefest/0007.png" class="image001"><tt><p class="paragraph001">STINTEL</p></tt></td>
+					<td><img src="TNT Codefest/0008.png" class="image001"><tt><p class="paragraph001">I-Checked</p></tt></td>
+					</table>
+					<table>
+					<td><img src="TNT Codefest/0009.jpg" class="image001"><tt><p class="paragraph001">STI Organizer</p></tt></td>
+					<td><img src="TNT Codefest/0010.jpg" class="image001"><tt><p class="paragraph001">Sigma</p></tt></td>
+					<td><img src="TNT Codefest/0011.jpg" class="image001"><tt><p class="paragraph001">Amigo</p></tt></td>
+					<td><img src="TNT Codefest/0012.jpg" class="image001"><tt><p class="paragraph001">Atlas</p></tt></td>
+					<td><img src="TNT Codefest/0013.jpg" class="image001"><tt><p class="paragraph001">Tina</p></tt></td>
+					<td><img src="TNT Codefest/0014.jpg" class="image001"><tt><p class="paragraph001">STI-MSC</p></tt></td>
+					</table>
+                </div>
+              </div>
+            </div>
+          </div>
 	 <br>
 	</div>
 	<div class="block001"><!--this is to block the host advertisement-->

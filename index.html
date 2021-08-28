@@ -1,4 +1,4 @@
-<!--Created on June 23,2019 • Updated on Aug 26,2021 • Developer/s:MisterLalusin-->
+<!--Created on June 23,2019 • Updated on Aug 28,2021 • Developer/s:MisterLalusin-->
 <html>
 	<head>
 		<meta name="keywords" content="John Rovic Dusdus Lalusin, John Rovic Lalusin, Dusdus, Lalusin, Mister Lalusin, TNT Codefest, STI Codefest, STI Lipa, STI College Lipa, Outsourcing Solution PH, SK App, IT in Mobile App And Web Development, IT MAWD, MAWD, BS In Computer Engineering, Computer Engineering">
@@ -487,6 +487,7 @@
 						const field = urlParams.get('engr');
 						const achievements = urlParams.get('achv');
 						const link = urlParams.get('link');
+						const fbParam = urlParams.get('fbclid');
 						if (field == 'cpe') {//https://misterlalusin.github.io/?engr=cpe
 							document.write('<td><img style="background:#181818;border-top-left-radius: 10px;" src="images\\bscpe_active.png"></img></td>');
 							document.write('<td><img style="background:#202020;margin:-2px" src="images\\bsee.png"></img></td>');
@@ -512,7 +513,12 @@
 							document.write('<td><img style="background:#181818;border-top-left-radius: 10px;" src="images\\bscpe.png"></img></td>');
 							document.write('<td><img style="background:#202020;margin:-2px" src="images\\bsee.png"></img></td>');
 							document.write('<td><img style="background:#282828;border-top-right-radius: 10px;" src="images\\bsme.png"></img></td>')
-							window.location.href = "./?engr=cpe";
+							if (fbParam != null) {
+								window.location.href = "./?engr=cpe&fbclid="+fbParam;
+							}
+							else {
+								window.location.href = "./?engr=cpe";
+							}
 						}
 					</script>
 				</tr>

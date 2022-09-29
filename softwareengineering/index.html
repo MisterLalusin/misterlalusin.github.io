@@ -1,4 +1,4 @@
-<!--Created on November 23,2018 • Updated on July 10,2022 • Developer/s:MisterLalusin-->
+<!--Created on November 23,2018 • Updated on September 25,2022 • Developer/s:MisterLalusin-->
 <html>
  <head><title>Software Engineering</title></head>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -59,6 +59,33 @@
 	left:16px;
 	}
 	.proCar-content {
+	font-family: Helvetica Neue LT Pro Roman;
+	color: #000;
+	font-weight: 400;
+	display: none;
+	background-color: white;
+	margin-top: -9px;
+	padding-bottom: 20px;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+	}
+  	.ojt-mains-page-title {
+	font-family: Nexa W01 Heavy;
+	font-size: 30px;
+	color: #04202E;
+	font-weight: 700;
+	}
+	.ojt-title-span {
+	font-family: Helvetica Neue LT Pro Roman !important;
+	font-size: 16px !important;
+	color: #fff !important;
+	font-weight: 700 !important;
+	display: inline-block;
+	background-color: black;
+	position: relative;
+	bottom: -10px;
+	left:16px;
+	}
+	.ojt-content {
 	font-family: Helvetica Neue LT Pro Roman;
 	color: #000;
 	font-weight: 400;
@@ -177,6 +204,11 @@
 	});
 	});
 	$(document).ready(function() {
+        $(this).on("click", ".ojt-title", function() {
+            $(this).parent().find(".ojt-content").toggle();
+    });
+    });
+	$(document).ready(function() {
         $(this).on("click", ".freBus-title", function() {
             $(this).parent().find(".freBus-content").toggle();
     });
@@ -209,6 +241,59 @@
 		  </div>
 		</div>
 	  </div>
+
+
+	  <!--https://www.html-code-generator.com/tools/html-encrypt-decrypt-->
+	  <!--https://base64.guru/converter/encode/image-->
+	  <!--https://www.md5online.org/md5-encrypt.html-->
+
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
+	  <script type="text/javascript" src="./f6908575255ace8fd0c50e10db1c445b/0001.js"></script>
+	  <script type="text/javascript" src="./f6908575255ace8fd0c50e10db1c445b/0002.js"></script>
+	  <script type="text/javascript" src="./f6908575255ace8fd0c50e10db1c445b/0003.js"></script>
+	  <script type="text/javascript" src="./f6908575255ace8fd0c50e10db1c445b/0004.js"></script>
+	  <script>
+		var passcode = "U2FsdGVkX19bFChNUlWPmXRxKqqhdzdR/YWoPWmgdTM=";
+		var decryptedUrlParams = CryptoJS.AES.decrypt("U2FsdGVkX19ZLHl9dnaPege7gWR5H2Jtph7uh0HzMOM=", "Secret Passphrase");
+		//var encryptedPasscode = CryptoJS.AES.encrypt("?", "Secret Passphrase");
+		var decryptedPasscode = CryptoJS.AES.decrypt(passcode, "Secret Passphrase");
+		const queryString = window.location.search;
+		const urlParams = new URLSearchParams(queryString);
+		const ap = urlParams.get(decryptedUrlParams.toString(CryptoJS.enc.Utf8));
+		
+		if (ap == decryptedPasscode.toString(CryptoJS.enc.Utf8)) {
+			document.write('<div class="ojt-tab-content"><div class="ojt-tab-content-body"><div class="ojt-main"><div class="ojt-title"><i class="fa fa-chevron-right" aria-hidden="true"></i><span class="ojt-title-span"><h2><tt>ON THE JOB TRAINING ⬇</tt></h2></span><hr></div><!--<div class="ojt-content">--><div class="layerWhite"><h2><tt>');
+			document.write(unescape('%41%52%43%20%53%79%73%74%65%6D%20%53%6F%6C%75%74%69%6F%6E%73%20%43%6F%2E'))
+			document.write('</tt></h2>');
+			document.write('<table>');
+			document.write('<td>');
+			js_4152432053797374656D20536F6C7574696F6E7320436F_0001();
+			document.write('<tt><p class="paragraph001">');
+			document.write(unescape('%4D%65%64%52%78%20%41%53%50%2E%4E%45%54%20%57%65%62%73%69%74%65%20%28%43%6C%6F%6E%65%29'))
+			document.write('</p></tt></td>');
+			document.write('<td>');
+			js_4152432053797374656D20536F6C7574696F6E7320436F_0002();
+			document.write('<tt><p class="paragraph001">');
+			document.write(unescape('%4D%65%64%52%78%20%41%6E%64%72%6F%69%64%20%41%70%70'))
+			document.write('</p></tt></td>');
+			document.write('</table>');
+			document.write('<table>');
+			document.write('<td>');
+			js_4152432053797374656D20536F6C7574696F6E7320436F_0003();
+			document.write('<tt><p class="paragraph001">');
+			document.write(unescape('%4D%65%64%52%78%2D%50%68%2E%63%6F%6D'))
+			document.write('</p></tt></td>');
+			document.write('<td>');
+			js_4152432053797374656D20536F6C7574696F6E7320436F_0004();
+			document.write('<tt><p class="paragraph001">');
+			document.write(unescape('%4D%65%64%52%78%20%57%69%6E%64%6F%77%73%20%41%70%70'))
+			document.write('</p></tt></td>');
+			document.write('</table>');
+			document.write('</div></div></div></div>');
+		}
+	 </script>
+
+
 	  <div class="freBus-tab-content">
 		  <div class="freBus-tab-content-body">
 			<div class="freBus-main">
@@ -254,6 +339,9 @@
 				<table>
 					<td><img src="Freelancing/0021.png" class="image001"><tt><p class="paragraph001">.<!--5061756C336661726D657273--></p></tt></td>
 					<td><img src="Freelancing/0022.png" class="image001"><tt><p class="paragraph001">.<!--4379636C65636F72652042696379636C652053686F70--></p></tt></td>
+				</table>
+				<table>
+					<td><img src="Freelancing/0023.png" class="image001"><tt><p class="paragraph001">.<!--4E75747269666F6F64--></p></tt></td>
 				</table>
 				<h2><tt>Business Ideas</tt></h2>
 				<table>

@@ -1,4 +1,4 @@
-<!--Created on November 23,2018 • Updated on October 05,2022 • Developer/s:MisterLalusin-->
+<!--Created on November 23,2018 • Updated on October 14,2022 • Developer/s:MisterLalusin-->
 <html>
  <head><title>Software Engineering</title></head>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -253,15 +253,28 @@
 	  <script type="text/javascript" src="./f6908575255ace8fd0c50e10db1c445b/0003.js"></script>
 	  <script type="text/javascript" src="./f6908575255ace8fd0c50e10db1c445b/0004.js"></script>
 	  <script>
+
+		var year = new Date().getFullYear();
+		var day = new Date().getDay();
+		var date = new Date().getDate();
+		var yearLastTwo = String(year).slice(-2);
+		var calculate1 = parseInt(year) * parseInt(date);
+		var calculate2 = parseInt(calculate1) + parseInt(day)
+		var calculate3 = parseInt(calculate2) / parseInt(yearLastTwo);
+		var calculate4 = parseInt(calculate3) * parseInt(day);
+		var accessCode = parseInt(calculate4) * parseInt(calculate4);
+
 		var passcode = "U2FsdGVkX19bFChNUlWPmXRxKqqhdzdR/YWoPWmgdTM=";
-		var decryptedUrlParams = CryptoJS.AES.decrypt("U2FsdGVkX19ZLHl9dnaPege7gWR5H2Jtph7uh0HzMOM=", "Secret Passphrase");
+		var decryptedUrlParamsPasscode = CryptoJS.AES.decrypt("U2FsdGVkX19ZLHl9dnaPege7gWR5H2Jtph7uh0HzMOM=", "Secret Passphrase");
+		var decryptedUrlParamsAccessCode = CryptoJS.AES.decrypt("U2FsdGVkX18rn7SYrX9r3MqfYzSq4TxiafAF8DcAhYY=", "Secret Passphrase");
 		//var encryptedPasscode = CryptoJS.AES.encrypt("?", "Secret Passphrase");
 		var decryptedPasscode = CryptoJS.AES.decrypt(passcode, "Secret Passphrase");
 		const queryString = window.location.search;
 		const urlParams = new URLSearchParams(queryString);
-		const ap = urlParams.get(decryptedUrlParams.toString(CryptoJS.enc.Utf8));
-		
-		if (ap == decryptedPasscode.toString(CryptoJS.enc.Utf8)) {
+		const ap = urlParams.get(decryptedUrlParamsPasscode.toString(CryptoJS.enc.Utf8));
+		const tmpAcc = urlParams.get(decryptedUrlParamsAccessCode.toString(CryptoJS.enc.Utf8));
+
+		if (ap == decryptedPasscode.toString(CryptoJS.enc.Utf8) || tmpAcc == accessCode) {
 			document.write('<div class="ojt-tab-content"><div class="ojt-tab-content-body"><div class="ojt-main"><div class="ojt-title"><i class="fa fa-chevron-right" aria-hidden="true"></i><span class="ojt-title-span"><h2><tt>ON THE JOB TRAINING ⬇</tt></h2></span><hr></div><!--<div class="ojt-content">--><div class="layerWhite"><h2><tt>');
 			document.write(unescape('%41%52%43%20%53%79%73%74%65%6D%20%53%6F%6C%75%74%69%6F%6E%73%20%43%6F%2E'))
 			document.write('</tt></h2>');

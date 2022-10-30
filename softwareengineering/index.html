@@ -1,4 +1,4 @@
-<!--Created on November 23,2018 • Updated on October 14,2022 • Developer/s:MisterLalusin-->
+<!--Created on November 23,2018 • Updated on October 30,2022 • Developer/s:MisterLalusin-->
 <html>
  <head><title>Software Engineering</title></head>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -254,7 +254,7 @@
 	  <script type="text/javascript" src="./f6908575255ace8fd0c50e10db1c445b/0004.js"></script>
 	  <script>
 
-		var year = new Date().getFullYear();
+		/*var year = new Date().getFullYear();
 		var day = new Date().getDay();
 		var date = new Date().getDate();
 		var yearLastTwo = String(year).slice(-2);
@@ -262,7 +262,15 @@
 		var calculate2 = parseInt(calculate1) + parseInt(day)
 		var calculate3 = parseInt(calculate2) / parseInt(yearLastTwo);
 		var calculate4 = parseInt(calculate3) * parseInt(day);
-		var accessCode = parseInt(calculate4) * parseInt(calculate4);
+		var accessCode = parseInt(calculate4) * parseInt(calculate4);*/
+
+		var year = new Date().getFullYear();
+		var date = new Date().getDate();
+		var yearLastTwo = String(year).slice(-2);
+		var calculate1 = parseInt(year) * parseInt(date);
+		var calculate2 = parseInt(calculate1) * parseInt(calculate1);
+		var calculate3 = parseInt(calculate2) / parseInt(yearLastTwo);
+		var accessCode = parseInt(calculate3);
 
 		var passcode = "U2FsdGVkX19bFChNUlWPmXRxKqqhdzdR/YWoPWmgdTM=";
 		var decryptedUrlParamsPasscode = CryptoJS.AES.decrypt("U2FsdGVkX19ZLHl9dnaPege7gWR5H2Jtph7uh0HzMOM=", "Secret Passphrase");

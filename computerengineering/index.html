@@ -1,0 +1,272 @@
+<!--Created on January 14,2023 • Updated on January 14,2023 • Developer/s:MisterLalusin-->
+<html>
+ <head><title>Computer Engineering</title></head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <style>
+  .gallery001 img {
+   max-width:420px;
+   max-height:236px;
+   min-width:100px;
+   margin:5px;
+  }
+  .gallery001 li {
+   text-align:center;
+   position:relative;
+  }
+  .gallery001 {
+   position:relative;
+   top:0;
+   left:0;
+   right:0;
+   bottom:0;
+   margin:auto;
+   width:876px;
+  }
+  .gallery001 h2 {
+   margin:5px;
+  }
+  .image001 {
+   float: left;
+   margin: 0px;
+  }
+  .image001 img {
+   position:absolute;
+   }
+  .paragraph001 {
+   text-align:center;
+   position:relative;
+   font-size:8px;
+  }
+	.icon {
+	font-size: 10px;
+	padding-right: 5px;
+	}
+  .proCar-mains-page-title {
+	font-family: Nexa W01 Heavy;
+	font-size: 30px;
+	color: #04202E;
+	font-weight: 700;
+	}
+	.proCar-title-span {
+	font-family: Helvetica Neue LT Pro Roman !important;
+	font-size: 16px !important;
+	color: #fff !important;
+	font-weight: 700 !important;
+	display: inline-block;
+	background-color: black;
+	position: relative;
+	bottom: -10px;
+	left:16px;
+	}
+	.proCar-content {
+	font-family: Helvetica Neue LT Pro Roman;
+	color: #000;
+	font-weight: 400;
+	display: none;
+	background-color: white;
+	margin-top: -9px;
+	padding-bottom: 20px;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+	}
+  	.ojt-mains-page-title {
+	font-family: Nexa W01 Heavy;
+	font-size: 30px;
+	color: #04202E;
+	font-weight: 700;
+	}
+	.ojt-title-span {
+	font-family: Helvetica Neue LT Pro Roman !important;
+	font-size: 16px !important;
+	color: #fff !important;
+	font-weight: 700 !important;
+	display: inline-block;
+	background-color: black;
+	position: relative;
+	bottom: -10px;
+	left:16px;
+	}
+	.ojt-content {
+	font-family: Helvetica Neue LT Pro Roman;
+	color: #000;
+	font-weight: 400;
+	display: none;
+	background-color: white;
+	margin-top: -9px;
+	padding-bottom: 20px;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+	}
+	.freBus-mains-page-title {
+	font-family: Nexa W01 Heavy;
+	font-size: 30px;
+	color: #04202E;
+	font-weight: 700;
+	}
+	.freBus-title-span {
+	font-family: Helvetica Neue LT Pro Roman !important;
+	font-size: 16px !important;
+	color: #fff !important;
+	font-weight: 700 !important;
+	display: inline-block;
+	background-color: black;
+	position: relative;
+	bottom: -10px;
+	left:16px;
+	}
+	.freBus-content {
+	font-family: Helvetica Neue LT Pro Roman;
+	color: #000;
+	font-weight: 400;
+	display: none;
+	background-color: white;
+	margin-top: -9px;
+	padding-bottom: 20px;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+	}
+	.perSch-mains-page-title {
+	font-family: Nexa W01 Heavy;
+	font-size: 30px;
+	color: #04202E;
+	font-weight: 700;
+	}
+	.perSch-title-span {
+	font-family: Helvetica Neue LT Pro Roman !important;
+	font-size: 16px !important;
+	color: #fff !important;
+	font-weight: 700 !important;
+	display: inline-block;
+	background-color: black;
+	position: relative;
+	bottom: -10px;
+	left:16px;
+	}
+	.perSch-content {
+	font-family: Helvetica Neue LT Pro Roman;
+	color: #000;
+	font-weight: 400;
+	display: none;
+	background-color: white;
+	margin-top: -9px;
+	padding-bottom: 20px;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+	}
+	hr {
+	border: 2px solid black;
+	border-radius: 5px;
+	}
+	body {
+		background-color: #f0f0f0;
+	}
+	.layerWhite {
+		background-color: white;
+		margin-top: -9px;
+		padding-bottom: 20px;
+		box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+	}
+	.truncateMobile001 {
+		width: 120px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		text-align:center;
+		position:relative;
+		font-size:8px;
+    }
+  </style>
+  <script>
+  function fitZoom() {
+    var width = (window.innerWidth > 0) ? window.innerWidth : screen.Width;
+    if(width >= 876) {
+	 document.write('<style>body {-moz-transform: scale(1, 1); zoom: 1; zoom: 1;}</style>');
+	}
+	else if (width >= 776) {
+	 document.write('<style>body {-moz-transform: scale(0.85, 0.85); zoom: 0.85; zoom: 85%;}</style>');
+	}
+	else if (width >= 676) {
+	 document.write('<style>body {-moz-transform: scale(0.65, 0.65); zoom: 0.65; zoom: 65%;}</style>');
+	}
+	else if (width >= 576) {
+	 document.write('<style>body {-moz-transform: scale(0.55, 0.55); zoom: 0.55; zoom: 55%;}</style>');
+	}
+	else if (width >= 476) {
+	 document.write('<style>body {-moz-transform: scale(0.45, 0.45); zoom: 0.45; zoom: 45%;}</style>');
+	}
+	else if (width >= 376) {
+	 document.write('<style>body {-moz-transform: scale(0.35, 0.35); zoom: 0.35; zoom: 35%;}</style>');
+	}
+	else {
+	 document.write('<style>body {-moz-transform: scale(0.35, 0.35); zoom: 0.35; zoom: 35%;}</style>');
+	}
+	}
+	fitZoom();
+	$(document).ready(function() {
+	$(this).on("click", ".proCar-title", function() {
+		$(this).parent().find(".proCar-content").toggle();
+	});
+	});
+	$(document).ready(function() {
+        $(this).on("click", ".ojt-title", function() {
+            $(this).parent().find(".ojt-content").toggle();
+    });
+    });
+	$(document).ready(function() {
+        $(this).on("click", ".freBus-title", function() {
+            $(this).parent().find(".freBus-content").toggle();
+    });
+    });
+	$(document).ready(function() {
+        $(this).on("click", ".perSch-title", function() {
+            $(this).parent().find(".perSch-content").toggle();
+    });
+    });
+  </script>
+   <body>
+	<div class="gallery001">
+	 <br>
+
+	  <div class="freBus-tab-content">
+		  <div class="freBus-tab-content-body">
+			<div class="freBus-main">
+			  <div class="freBus-title">
+				<i class="fa fa-chevron-right" aria-hidden="true"></i>
+				<span class="freBus-title-span"><h2><tt>FREELANCING</tt></h2></span>
+				<hr>
+			  </div>
+				<div class="layerWhite">  
+				<h2><tt>Arduino</tt></h2>
+				<table>
+					<td><img src="Freelancing/0001.jpg" class="image001"><tt><p class="paragraph001">Automated Pet Feeding</p></tt></td>
+				</table>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<!-- 
+        <div class="perSch-tab-content">
+            <div class="perSch-tab-content-body">
+              <div class="perSch-main">
+                <div class="perSch-title">
+                  <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                  <span class="perSch-title-span"><h2><tt>SCHOOL RELATED ⬇</tt></h2></span>
+                </div>
+				<hr>
+				<div class="layerWhite">  
+					<h2><tt>NodeMCU</tt></h2>
+					<table>
+					<td><img src="NodeMCU/0001.png" class="image001"><tt><p class="paragraph001">NodeMCU Escape Taxi
+					</p></tt></td>
+					</table>
+					<h2><tt>Raspberry Pi</tt></h2>
+					<table>
+						<td><img src="Raspberry Pi/0001.png" class="image001"><tt><p class="paragraph001">RPIES</p></tt></td>
+					</table>
+                </div>
+              </div>
+            </div>
+          </div>
+		  -->
+	 <br>
+	</div>
+	<iframe style="display:none;width:0px;height:0px;" src="https://randomtestphp.000webhostapp.com/7669736974/?website=misterlalusin.github.io/softwareengineering"></iframe>
+	<div class="block001"><!--this is to block the host advertisement-->
+	<script>document.body.onresize = function(){location.reload();};</script>
+</html>

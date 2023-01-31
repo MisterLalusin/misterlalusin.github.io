@@ -1,4 +1,4 @@
-<!--Created on November 23,2018 • Updated on January 14,2023 • Developer/s:MisterLalusin-->
+<!--Created on November 23,2018 • Updated on February 01,2023 • Developer/s:MisterLalusin-->
 <html>
  <head><title>Software Engineering</title></head>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -275,42 +275,86 @@
 		var passcode = "U2FsdGVkX19bFChNUlWPmXRxKqqhdzdR/YWoPWmgdTM=";
 		var decryptedUrlParamsPasscode = CryptoJS.AES.decrypt("U2FsdGVkX19ZLHl9dnaPege7gWR5H2Jtph7uh0HzMOM=", "Secret Passphrase");
 		var decryptedUrlParamsAccessCode = CryptoJS.AES.decrypt("U2FsdGVkX18rn7SYrX9r3MqfYzSq4TxiafAF8DcAhYY=", "Secret Passphrase");
+		var decryptedUrlParamsConfi = CryptoJS.AES.decrypt("U2FsdGVkX1+vtdpSrlu+m+2QSKh2nTUK04OmrWNh8xo=", "Secret Passphrase");
+		var decryptedUrlParamsValueConfi = CryptoJS.AES.decrypt("U2FsdGVkX18FBUyotnjBl9FlJ3P26dUBq2qrzOD0VdE=", "Secret Passphrase");
+		var decryptedUrlParamsValueDisplayConfi = CryptoJS.AES.decrypt("U2FsdGVkX19d5K1AX5l2F+CdfOXtcIBkK+EsTDQdZQc=", "Secret Passphrase");
 		//var encryptedPasscode = CryptoJS.AES.encrypt("?", "Secret Passphrase");
 		var decryptedPasscode = CryptoJS.AES.decrypt(passcode, "Secret Passphrase");
 		const queryString = window.location.search;
 		const urlParams = new URLSearchParams(queryString);
 		const ap = urlParams.get(decryptedUrlParamsPasscode.toString(CryptoJS.enc.Utf8));
 		const tmpAcc = urlParams.get(decryptedUrlParamsAccessCode.toString(CryptoJS.enc.Utf8));
+		const confiAcc = urlParams.get(decryptedUrlParamsConfi.toString(CryptoJS.enc.Utf8));
+		const confiVal = decryptedUrlParamsValueConfi.toString(CryptoJS.enc.Utf8);
+		const confiDispVal = decryptedUrlParamsValueDisplayConfi.toString(CryptoJS.enc.Utf8);
 
-		if (ap == decryptedPasscode.toString(CryptoJS.enc.Utf8) || tmpAcc == accessCode) {
+		if (ap == decryptedPasscode.toString(CryptoJS.enc.Utf8) || tmpAcc == accessCode || confiAcc == confiVal) {
+			document.write('<div class="confiDIV">');
 			document.write('<div class="ojt-tab-content"><div class="ojt-tab-content-body"><div class="ojt-main"><div class="ojt-title"><i class="fa fa-chevron-right" aria-hidden="true"></i><span class="ojt-title-span"><h2><tt>ON THE JOB TRAINING ⬇</tt></h2></span><hr></div><!--<div class="ojt-content">--><div class="layerWhite"><h2><tt>');
 			document.write(unescape('%41%52%43%20%53%79%73%74%65%6D%20%53%6F%6C%75%74%69%6F%6E%73%20%43%6F%2E'))
 			document.write('</tt></h2>');
 			document.write('<table>');
 			document.write('<td>');
+			document.write('<div class="parent">');
 			js_f6908575255ace8fd0c50e10db1c445b_0001();
+			document.write('<h1><tt>'+confiDispVal+'</tt></h1></div>');
 			document.write('<tt><p class="paragraph001">');
 			document.write(unescape('%4D%65%64%52%78%20%41%53%50%2E%4E%45%54%20%57%65%62%73%69%74%65%20%28%43%6C%6F%6E%65%29'))
 			document.write('</p></tt></td>');
 			document.write('<td>');
+			document.write('<div class="parent">');
 			js_f6908575255ace8fd0c50e10db1c445b_0002();
+			document.write('<h1><tt>'+confiDispVal+'</tt></h1></div>');
 			document.write('<tt><p class="paragraph001">');
 			document.write(unescape('%4D%65%64%52%78%20%41%6E%64%72%6F%69%64%20%41%70%70'))
 			document.write('</p></tt></td>');
 			document.write('</table>');
 			document.write('<table>');
 			document.write('<td>');
+			document.write('<div class="parent">');
 			js_f6908575255ace8fd0c50e10db1c445b_0003();
+			document.write('<h1><tt>'+confiDispVal+'</tt></h1></div>');
 			document.write('<tt><p class="paragraph001">');
 			document.write(unescape('%4D%65%64%52%78%2D%50%68%2E%63%6F%6D'))
 			document.write('</p></tt></td>');
 			document.write('<td>');
+			document.write('<div class="parent">');
 			js_f6908575255ace8fd0c50e10db1c445b_0004();
+			document.write('<h1><tt>'+confiDispVal+'</tt></h1></div>');
 			document.write('<tt><p class="paragraph001">');
 			document.write(unescape('%4D%65%64%52%78%20%57%69%6E%64%6F%77%73%20%41%70%70'))
 			document.write('</p></tt></td>');
 			document.write('</table>');
-			document.write('</div></div></div></div>');
+			document.write('</div></div></div></div></div>');
+			if (confiAcc == confiVal) {
+				//document.write('<style>.confiDIV img{-webkit-filter: blur(5px); }</style>');
+				//document.write('<style>.confiDIV img {display: inline;-moz-box-sizing: border-box;box-sizing: border-box;background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMz5okhK-sQPvA6X2QMgzwHAaZgStte2sT0A&usqp=CAU)no-repeat;width: 420px;height: 236px;padding-left: 420px;</style>');
+				//document.write('<style>.confiDIV img{ border: 1px solid #555; }</style>');
+				//document.write('<style>.confiDIV img{  filter: sepia(69%) blur(22px); }</style>');
+				document.write('<style>.confiDIV img{  filter: invert(100%) blur(17px) }</style>');
+				//document.write('<style>.confiDIV img{  filter: blur(5px);-webkit-filter: blur(5px);-moz-filter: blur(5px);-o-filter: blur(5px);-ms-filter: blur(5px); }</style>');
+				document.write('<style>.confiDIV p{visibility: hidden;}.confiDIV p:before {content: "";visibility: visible;color:red;} </style>');
+				document.write('<style>.parent h1 {position:relative;margin-top:-236px;font-size: 16px;color: #000;z-index: 5;text-align: center;line-height: 210px;color:#808080;}</style>');
+				document.write('<style> .parent { position: relative; }</style>');
+				document.write('<style>.confiDIV img{margin-top:0px;} </style>');
+
+				function click (e) {
+				if (!e)
+					e = window.event;
+				if ((e.type && e.type == "contextmenu") || (e.button && e.button == 2) || (e.which && e.which == 3)) {
+					if (window.opera)
+					window.alert("");
+					return false;
+				}
+				}
+				if (document.layers)
+				document.captureEvents(Event.MOUSEDOWN);
+				document.onmousedown = click;
+				document.oncontextmenu = click;
+			}
+			else {
+				document.write('<style>.confiDIV h1{display:none} </style>');
+			}
 		}
 	 </script>
 
@@ -365,6 +409,10 @@
 					<td><img src="Freelancing/0023.png" class="image001"><tt><p class="paragraph001">Nutrifood</p></tt></td>
 					<td><img src="Freelancing/0024.png" class="image001"><tt><p class="paragraph001">.<!--4375726C795461627350682E73686F70--></p></tt></td>
 					<td><img src="Freelancing/0025.jpg" class="image001"><tt><p class="paragraph001">Automated Pet Feeding</p></tt></td>
+					<td><img src="Freelancing/0026.jpg" class="image001"><tt><p class="paragraph001">Soil Monitoring</p></tt></td>
+				</table>
+				<table>
+					<td><img src="Freelancing/0027.png" class="image001"><tt><p class="paragraph001">Plant Growth - Open CV</p></tt></td>
 				</table>
 				<h2><tt>Business Ideas</tt></h2>
 				<table>

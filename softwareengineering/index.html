@@ -1,4 +1,4 @@
-<!--Created on November 23,2018 • Updated on May 01,2023 • Developer/s:MisterLalusin-->
+<!--Created on November 23,2018 • Updated on Aug 12,2023 • Developer/s:MisterLalusin-->
 <html>
  <head><title>Software Engineering</title></head>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -219,6 +219,61 @@
     });
     });
   </script>
+	<!--https://www.html-code-generator.com/tools/html-encrypt-decrypt-->
+	<!--https://base64.guru/converter/encode/image-->
+	<!--https://www.md5online.org/md5-encrypt.html-->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="./974a404461bbc4a9f14a484ea885108f/0001.js"></script>
+	<script type="text/javascript" src="./974a404461bbc4a9f14a484ea885108f/0002.js"></script>
+	<script type="text/javascript" src="./974a404461bbc4a9f14a484ea885108f/0003.js"></script>
+	<script type="text/javascript" src="./974a404461bbc4a9f14a484ea885108f/0004.js"></script>
+	<script type="text/javascript" src="./974a404461bbc4a9f14a484ea885108f/0005.js"></script>
+	<script type="text/javascript" src="./974a404461bbc4a9f14a484ea885108f/0006.js"></script>
+
+	<script type="text/javascript" src="./f6908575255ace8fd0c50e10db1c445b/0001.js"></script>
+	<script type="text/javascript" src="./f6908575255ace8fd0c50e10db1c445b/0002.js"></script>
+	<script type="text/javascript" src="./f6908575255ace8fd0c50e10db1c445b/0003.js"></script>
+	<script type="text/javascript" src="./f6908575255ace8fd0c50e10db1c445b/0004.js"></script>
+	<script>
+	/*var year = new Date().getFullYear();
+	var day = new Date().getDay();
+	var date = new Date().getDate();
+	var yearLastTwo = String(year).slice(-2);
+	var calculate1 = parseInt(year) * parseInt(date);
+	var calculate2 = parseInt(calculate1) + parseInt(day)
+	var calculate3 = parseInt(calculate2) / parseInt(yearLastTwo);
+	var calculate4 = parseInt(calculate3) * parseInt(day);
+	var accessCode = parseInt(calculate4) * parseInt(calculate4);*/
+
+	var year = new Date().getFullYear();
+	var date = new Date().getDate();
+	var yearLastTwo = String(year).slice(-2);
+	var calculate1 = parseInt(year) * parseInt(date);
+	var calculate2 = parseInt(calculate1) * parseInt(calculate1);
+	var calculate3 = parseInt(calculate2) / parseInt(yearLastTwo);
+	var accessCode = parseInt(calculate3);
+
+	var passcode = "U2FsdGVkX19bFChNUlWPmXRxKqqhdzdR/YWoPWmgdTM=";
+	var decryptedUrlParamsPasscode = CryptoJS.AES.decrypt("U2FsdGVkX19ZLHl9dnaPege7gWR5H2Jtph7uh0HzMOM=", "Secret Passphrase");
+	var decryptedUrlParamsAccessCode = CryptoJS.AES.decrypt("U2FsdGVkX18rn7SYrX9r3MqfYzSq4TxiafAF8DcAhYY=", "Secret Passphrase");
+	var decryptedUrlParamsCon = CryptoJS.AES.decrypt("U2FsdGVkX1+vtdpSrlu+m+2QSKh2nTUK04OmrWNh8xo=", "Secret Passphrase");
+	var decryptedUrlParamsValueCon = CryptoJS.AES.decrypt("U2FsdGVkX18FBUyotnjBl9FlJ3P26dUBq2qrzOD0VdE=", "Secret Passphrase");
+	var decryptedUrlParamsValueDisplayCon = CryptoJS.AES.decrypt("U2FsdGVkX19d5K1AX5l2F+CdfOXtcIBkK+EsTDQdZQc=", "Secret Passphrase");
+	var decryptedUrlParamsTitleComCon = CryptoJS.AES.decrypt("U2FsdGVkX18joLD4I5Re8v+g1D+eqSsS7zcx1kxbalqzOWq/jQODvsRekXCcuYBN", "Secret Passphrase");
+	//var encryptedPasscode = CryptoJS.AES.encrypt("?", "Secret Passphrase");
+	var decryptedPasscode = CryptoJS.AES.decrypt(passcode, "Secret Passphrase");
+	const queryString = window.location.search;
+	const urlParams = new URLSearchParams(queryString);
+	const ap = urlParams.get(decryptedUrlParamsPasscode.toString(CryptoJS.enc.Utf8));
+	const tmpAcc = urlParams.get(decryptedUrlParamsAccessCode.toString(CryptoJS.enc.Utf8));
+	const conPar = decryptedUrlParamsCon.toString(CryptoJS.enc.Utf8);
+	const conAcc = urlParams.get(conPar);
+	const conVal = decryptedUrlParamsValueCon.toString(CryptoJS.enc.Utf8);
+	const conDispVal = decryptedUrlParamsValueDisplayCon.toString(CryptoJS.enc.Utf8);
+	const conTitleCom = decryptedUrlParamsTitleComCon.toString(CryptoJS.enc.Utf8);
+	</script>
    <body>
 	<div class="gallery001">
 	 <br>
@@ -232,7 +287,114 @@
 			</div>
 			<!--<div class="proCar-content">-->
 			<div class="layerWhite">  
-				<h2><tt>Outsourcing Solution PH </tt></h2>
+
+				<script>
+					if (ap == decryptedPasscode.toString(CryptoJS.enc.Utf8) || tmpAcc == accessCode || conAcc == conVal) {
+						document.write('<div class="conDIV">');
+						document.write('<div class="ojt-tab-content-body"><h2><tt>');
+						document.write('<div class="companyCon"><span>');
+						document.write(unescape('%48%69%50%45%20%4A%61%70%61%6E%20%49%6E%63%2E'))
+						document.write('</span></div>');
+						document.write('</tt></h2>');
+						document.write('<table>');
+						document.write('<td>');
+						document.write('<div class="parentCon">');
+						js_974a404461bbc4a9f14a484ea885108f_0001();
+						document.write('<h1><tt>'+conDispVal+'</tt></h1></div>');
+						document.write('<tt><p class="paragraph001">');
+						document.write(unescape('%54%79%70%65%20%4B%69%74%61%20%42%6C%6F%67%20%50%6F%73%74%69%6E%67'))
+						document.write('</p></tt></td>');
+						document.write('<td>');
+						document.write('<div class="parentCon">');
+						js_974a404461bbc4a9f14a484ea885108f_0002();
+						document.write('<h1><tt>'+conDispVal+'</tt></h1></div>');
+						document.write('<tt><p class="paragraph001">');
+						document.write(unescape('%56%75%65%20%50%68%6F%74%6F%73'))
+						document.write('</p></tt></td>');
+						document.write('</table>');
+						document.write('<table>');
+						document.write('<td>');
+						document.write('<div class="parentCon">');
+						js_974a404461bbc4a9f14a484ea885108f_0003();
+						document.write('<h1><tt>'+conDispVal+'</tt></h1></div>');
+						document.write('<tt><p class="paragraph001">');
+						document.write(unescape('%44%6F%63%4D%42'))
+						document.write('</p></tt></td>');
+						document.write('<td>');
+						document.write('<div class="parentCon">');
+						js_974a404461bbc4a9f14a484ea885108f_0004();
+						document.write('<h1><tt>'+conDispVal+'</tt></h1></div>');
+						document.write('<tt><p class="paragraph001">');
+						document.write(unescape('%48%69%50%45%72%4C%69%6E%6B'))
+						document.write('</p></tt></td>');
+						document.write('</table>');
+						document.write('<table>');
+						document.write('<td>');
+						document.write('<div class="parentCon">');
+						js_974a404461bbc4a9f14a484ea885108f_0005();
+						document.write('<h1><tt>'+conDispVal+'</tt></h1></div>');
+						document.write('<tt><p class="paragraph001">');
+						document.write(unescape('%4A%75%61%6E%50%61%73%73'))
+						document.write('</p></tt></td>');
+						document.write('<td>');
+						document.write('<div class="parentCon">');
+						js_974a404461bbc4a9f14a484ea885108f_0006();
+						document.write('<h1><tt>'+conDispVal+'</tt></h1></div>');
+						document.write('<tt><p class="paragraph001">');
+						document.write(unescape('%53%75%69%6B%6F%73%68%61'))
+						document.write('</p></tt></td>');
+						document.write('</table>');
+						document.write('</div></div>');
+						if (conAcc == conVal) {
+							//document.write('<style>.conDIV img{-webkit-filter: blur(5px); }</style>');
+							//document.write('<style>.conDIV img {display: inline;-moz-box-sizing: border-box;box-sizing: border-box;background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMz5okhK-sQPvA6X2QMgzwHAaZgStte2sT0A&usqp=CAU)no-repeat;width: 420px;height: 236px;padding-left: 420px;</style>');
+							//document.write('<style>.conDIV img{ border: 1px solid #555; }</style>');
+							//document.write('<style>.conDIV img{  filter: sepia(69%) blur(22px); }</style>');
+							document.write('<style>.conDIV img{  filter: invert(100%) blur(17px) grayscale(100%) }</style>');
+							//document.write('<style>.conDIV img{  filter: blur(5px);-webkit-filter: blur(5px);-moz-filter: blur(5px);-o-filter: blur(5px);-ms-filter: blur(5px); }</style>');
+							document.write('<style>.conDIV p{visibility: hidden;}.conDIV p:before {content: "";visibility: visible;color:red;} </style>');
+							document.write('<style>.parentCon h1 {position:relative;margin-top:-236px;font-size: 16px;color: #000;z-index: 5;text-align: center;line-height: 210px;color:#808080;text-shadow: 2px 2px 4px #000000;}</style>');
+							document.write('<style> .parentCon { position: relative; }</style>');
+							document.write('<style>.conDIV img{margin-top:0px;} </style>');
+							document.write('<style>.companyCon span{visibility: hidden;}.companyCon span:before {content: "'+conTitleCom+'";visibility: visible;color:black;} </style>');
+
+							$(document).ready(function() {
+							$('body').bind('cut copy', function(e) {
+								e.preventDefault();
+								});
+							});
+
+							function click (e) {
+							if (!e)
+								e = window.event;
+							if ((e.type && e.type == "contextmenu") || (e.button && e.button == 2) || (e.which && e.which == 3)) {
+								if (window.opera)
+								window.alert("");
+								return false;
+							}
+							}
+							if (document.layers)
+							document.captureEvents(Event.MOUSEDOWN);
+							document.onmousedown = click;
+							document.oncontextmenu = click;
+						}
+						else {
+							document.write('<style>.conDIV h1{display:none} </style>');
+						}
+					}
+					else {
+						var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?'+conPar+'='+conVal;
+						window.history.pushState({path:newurl},'',newurl);
+						location.reload();
+					}
+				</script>
+
+
+
+
+
+
+				<h2><tt>Outsourcing Solution PH</tt></h2>
 				<table>
 				<td><img src="Outsourcing Solution PH/0001.jpg" class="image001"><tt><p class="paragraph001">SK App</p></tt></td>
 				<td><img src="Outsourcing Solution PH/0002.png" class="image001"><tt><p class="paragraph001">OutsourcingSolutionPH.com</p></tt></td>
@@ -242,55 +404,7 @@
 		</div>
 	  </div>
 
-
-	  <!--https://www.html-code-generator.com/tools/html-encrypt-decrypt-->
-	  <!--https://base64.guru/converter/encode/image-->
-	  <!--https://www.md5online.org/md5-encrypt.html-->
-
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
-	  <script type="text/javascript" src="./f6908575255ace8fd0c50e10db1c445b/0001.js"></script>
-	  <script type="text/javascript" src="./f6908575255ace8fd0c50e10db1c445b/0002.js"></script>
-	  <script type="text/javascript" src="./f6908575255ace8fd0c50e10db1c445b/0003.js"></script>
-	  <script type="text/javascript" src="./f6908575255ace8fd0c50e10db1c445b/0004.js"></script>
 	  <script>
-
-		/*var year = new Date().getFullYear();
-		var day = new Date().getDay();
-		var date = new Date().getDate();
-		var yearLastTwo = String(year).slice(-2);
-		var calculate1 = parseInt(year) * parseInt(date);
-		var calculate2 = parseInt(calculate1) + parseInt(day)
-		var calculate3 = parseInt(calculate2) / parseInt(yearLastTwo);
-		var calculate4 = parseInt(calculate3) * parseInt(day);
-		var accessCode = parseInt(calculate4) * parseInt(calculate4);*/
-
-		var year = new Date().getFullYear();
-		var date = new Date().getDate();
-		var yearLastTwo = String(year).slice(-2);
-		var calculate1 = parseInt(year) * parseInt(date);
-		var calculate2 = parseInt(calculate1) * parseInt(calculate1);
-		var calculate3 = parseInt(calculate2) / parseInt(yearLastTwo);
-		var accessCode = parseInt(calculate3);
-
-		var passcode = "U2FsdGVkX19bFChNUlWPmXRxKqqhdzdR/YWoPWmgdTM=";
-		var decryptedUrlParamsPasscode = CryptoJS.AES.decrypt("U2FsdGVkX19ZLHl9dnaPege7gWR5H2Jtph7uh0HzMOM=", "Secret Passphrase");
-		var decryptedUrlParamsAccessCode = CryptoJS.AES.decrypt("U2FsdGVkX18rn7SYrX9r3MqfYzSq4TxiafAF8DcAhYY=", "Secret Passphrase");
-		var decryptedUrlParamsCon = CryptoJS.AES.decrypt("U2FsdGVkX1+vtdpSrlu+m+2QSKh2nTUK04OmrWNh8xo=", "Secret Passphrase");
-		var decryptedUrlParamsValueCon = CryptoJS.AES.decrypt("U2FsdGVkX18FBUyotnjBl9FlJ3P26dUBq2qrzOD0VdE=", "Secret Passphrase");
-		var decryptedUrlParamsValueDisplayCon = CryptoJS.AES.decrypt("U2FsdGVkX19d5K1AX5l2F+CdfOXtcIBkK+EsTDQdZQc=", "Secret Passphrase");
-		var decryptedUrlParamsTitleComCon = CryptoJS.AES.decrypt("U2FsdGVkX18joLD4I5Re8v+g1D+eqSsS7zcx1kxbalqzOWq/jQODvsRekXCcuYBN", "Secret Passphrase");
-		//var encryptedPasscode = CryptoJS.AES.encrypt("?", "Secret Passphrase");
-		var decryptedPasscode = CryptoJS.AES.decrypt(passcode, "Secret Passphrase");
-		const queryString = window.location.search;
-		const urlParams = new URLSearchParams(queryString);
-		const ap = urlParams.get(decryptedUrlParamsPasscode.toString(CryptoJS.enc.Utf8));
-		const tmpAcc = urlParams.get(decryptedUrlParamsAccessCode.toString(CryptoJS.enc.Utf8));
-		const conPar = decryptedUrlParamsCon.toString(CryptoJS.enc.Utf8);
-		const conAcc = urlParams.get(conPar);
-		const conVal = decryptedUrlParamsValueCon.toString(CryptoJS.enc.Utf8);
-		const conDispVal = decryptedUrlParamsValueDisplayCon.toString(CryptoJS.enc.Utf8);
-		const conTitleCom = decryptedUrlParamsTitleComCon.toString(CryptoJS.enc.Utf8);
-
 		if (ap == decryptedPasscode.toString(CryptoJS.enc.Utf8) || tmpAcc == accessCode || conAcc == conVal) {
 			document.write('<div class="conDIV">');
 			document.write('<div class="ojt-tab-content"><div class="ojt-tab-content-body"><div class="ojt-main"><div class="ojt-title"><i class="fa fa-chevron-right" aria-hidden="true"></i><span class="ojt-title-span"><h2><tt>ON THE JOB TRAINING ⬇</tt></h2></span><hr></div><!--<div class="ojt-content">--><div class="layerWhite"><h2><tt>');

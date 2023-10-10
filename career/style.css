@@ -631,6 +631,9 @@ span.user {
 	.mainsection {
 		margin: 0 0 0 0;
 	}
+	div.articleRight {
+		max-width: 100%;
+	}
 	#simpleSearch {
 		display: none;
 	}

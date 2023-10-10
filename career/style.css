@@ -294,6 +294,9 @@ p.siteSub {
 }
 body {
 	background: url(img/body-top.png) repeat-x top left #f6f6f6;
+	margin: 0 auto;
+	max-width: 1435px;
+	padding: 20px;
 }
 ul {
 	list-style-type: none;
@@ -316,7 +319,7 @@ a:hover {
 	text-decoration: underline;
 }
 .wrapAll {
-	width: 100%.
+	width: 100%;
 }
 .sidebar {
 	float: left;
@@ -586,6 +589,12 @@ span.user {
 	margin-right: 1em;
 }
 @media screen and (max-width: 850px) {
+	.sidebar {
+		display: none;
+	}
+	.mainsection {
+		margin: 0 0 0 0;
+	}
 	#searchInput {
 		width: 110px;
 	}
@@ -594,23 +603,34 @@ span.user {
 	}
 }
 @media screen and (max-width: 700px) {
+	.sidebar {
+		display: none;
+	}
+	.mainsection {
+		margin: 0 0 0 0;
+	}
 	.tabsRight {
 		display: none;
 	}
 }
 @media screen and (max-width: 550px) {
 	.sidebar {
-		width: 6em;
-		padding: 3px 0.5em 10px 0.5em;
+		display: none;
 	}
 	.mainsection {
-		margin: 0 0 0 7em;
+		margin: 0 0 0 0;
 	}
 	.contentsPanel {
 		width: auto;
 	}
 }
 @media screen and (max-width: 400px) {
+	.sidebar {
+		display: none;
+	}
+	.mainsection {
+		margin: 0 0 0 0;
+	}
 	#simpleSearch {
 		display: none;
 	}

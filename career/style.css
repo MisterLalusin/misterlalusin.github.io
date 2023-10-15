@@ -325,7 +325,7 @@ a:hover {
 	float: left;
 	width: 9em;
 	padding: 3px 1.5em 10px 1.3em;
-	position: absolute;
+	position: fixed;
 }
 .sidebar h3 {
 	font-size: 0.75em;

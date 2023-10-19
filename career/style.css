@@ -367,7 +367,11 @@ div.articleRightInner {
 	overflow: hidden;
 }
 .logo {
-	margin-bottom: 20px;
+    margin-bottom: 0px;
+    width: 109px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 .navigation {
 	padding: 0.15em 0 0 0.45em;
@@ -586,6 +590,34 @@ span.user {
 	display: inline-block;
 	margin-right: 1em;
 }
+.container {
+    max-width: 95%;
+    margin: 0 auto;
+}
+.two-column-list {
+    list-style: none;
+    columns: 2;
+    column-gap: 50px; 
+    counter-reset: list-counter;
+	font-size: 0.95em;
+}
+.two-column-list li {
+    position: relative;
+    text-align: left;
+    break-inside: avoid; 
+    max-width: 100%;
+    overflow-wrap: break-word; 
+    word-break: break-all; 
+}
+.two-column-list li::before {
+    counter-increment: list-counter;
+    content: counter(list-counter) ".";
+    position: absolute;
+    right: 100%;
+    top: 0;
+    color: #555;
+    white-space: nowrap;
+}
 @media screen and (max-width: 850px) {
 	.sidebar {
 		display: none;
@@ -621,6 +653,9 @@ span.user {
 	.contentsPanel {
 		width: auto;
 	}
+    .two-column-list {
+        columns: 1;
+    }
 }
 @media screen and (max-width: 400px) {
 	.sidebar {
@@ -635,44 +670,4 @@ span.user {
 	#simpleSearch {
 		display: none;
 	}
-}
-
-
-
-.container {
-    max-width: 95%;
-    margin: 0 auto;
-}
-
-.two-column-list {
-    list-style: none;
-    columns: 2;
-    column-gap: 50px; /* Set a 200px margin between the columns */
-    counter-reset: list-counter;
-}
-
-.two-column-list li {
-    position: relative;
-    text-align: left;
-    break-inside: avoid; /* Prevent column breaks inside list items */
-    max-width: 100%; /* Set the maximum width to the column width */
-    overflow-wrap: break-word; /* Move long words to the next line */
-    word-break: break-all; /* Ensure that the text starts connected to the first words before breaking */
-}
-
-.two-column-list li::before {
-    counter-increment: list-counter;
-    content: counter(list-counter) ".";
-    position: absolute;
-    right: 100%;
-    top: 0;
-    color: #555;
-    white-space: nowrap;
-}
-
-/* Media query for small screens */
-@media (max-width: 600px) {
-    .two-column-list {
-        columns: 1;
-    }
 }

@@ -621,6 +621,21 @@ span.user {
 .fbHyperlinkBanner {
 	display: none;
 }
+.personal-details-table {
+	border-collapse: separate;
+    border-spacing: 0 7px;
+    width: 100%;
+}
+.personal-details-table th {
+    text-align: left;
+    vertical-align: top;
+	min-width: 80px;
+}
+.personal-details-table td {
+    text-align: left;
+    vertical-align: top;
+}
+
 @media screen and (max-width: 850px) {
 	.sidebar {
 		display: none;

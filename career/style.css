@@ -635,7 +635,20 @@ span.user {
     text-align: left;
     vertical-align: top;
 }
-
+.investmentsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    justify-content: space-around;
+    flex-wrap: wrap;
+	margin-bottom: -30px;
+}
+.investmentsList img {
+    width: 269px;
+    height: auto;
+    margin: 5px;
+}
 @media screen and (max-width: 850px) {
 	.sidebar {
 		display: none;
@@ -673,6 +686,11 @@ span.user {
 	}
     .two-column-list {
         columns: 1;
+    }
+}
+@media (max-width: 550px) {
+    .investmentsList img {
+        width: 200%;
     }
 }
 @media screen and (max-width: 400px) {

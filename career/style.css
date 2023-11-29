@@ -690,7 +690,7 @@ span.user {
 }
 @media (max-width: 550px) {
     .investmentsList img {
-        width: 200%;
+        height: 200%;
     }
 }
 @media screen and (max-width: 400px) {

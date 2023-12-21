@@ -597,17 +597,17 @@ span.user {
 .two-column-list {
     list-style: none;
     columns: 2;
-    column-gap: 50px; 
+    column-gap: 50px;
     counter-reset: list-counter;
 	font-size: 0.95em;
 }
 .two-column-list li {
     position: relative;
     text-align: left;
-    break-inside: avoid; 
+    break-inside: avoid;
     max-width: 100%;
-    overflow-wrap: break-word; 
-    word-break: break-all; 
+    overflow-wrap: break-word;
+    word-break: break-all;
 }
 .two-column-list li::before {
     counter-increment: list-counter;
@@ -639,7 +639,7 @@ span.user {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; 
+    display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 	margin-bottom: -30px;
@@ -690,9 +690,10 @@ span.user {
 }
 @media (max-width: 550px) {
     .investmentsList img {
-		width: auto;
-		height: 55px;
-		margin: 5px;
+		width: 100px;
+		height: auto;
+		max-height: 40px;
+		margin: 1px;
     }
 }
 @media screen and (max-width: 400px) {

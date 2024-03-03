@@ -15,5 +15,8 @@ jobs:
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USERNAME }}
           port: ${{ secrets.SSH_PORT }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: whoami
+          password: ${{ secrets.SSH_PASSWORD }}
+          script: |
+            cd /var/www/misterlalusin.github.io
+            git checkout master
+            git pull origin master

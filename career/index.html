@@ -9,6 +9,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+		<script>
+		function toggleContent(contentId, toggleElement) {
+			const content = document.getElementById(contentId);
+
+			if (!content) {
+				console.warn(`No element found with ID "${contentId}"`);
+				return;
+			}
+
+			if (content.classList.contains('hidden')) {
+				content.classList.remove('hidden');
+				toggleElement.textContent = toggleElement.textContent.replace('▶', '▼');
+			} else {
+				content.classList.add('hidden');
+				toggleElement.textContent = toggleElement.textContent.replace('▼', '▶');
+			}
+		}
+		</script>	
     </head>
     <body>
 		<img class="fbHyperlinkBanner" src='img/fb_hyperlink_banner.png' alt="banner">
@@ -153,33 +171,38 @@
 						Last day of Work Immersion
 					</div>
 					<p>During his Nissan Lipa internship, Mr. Lalusin gained valuable insights into the management of vehicle repairs and replacement parts. Exposure to automotive engineers in the Nissan Lipa Parts Department reignited his interest in pursuing one of his engineering dreams - Mechanical Engineering. The other two options he considered were Electrical and Computer Engineering. His profound fascination with machinery began to dominate his thinking, prompting him to reconsider pursuing a Bachelor of Science in Mechanical Engineering. This choice was influenced by the fact that his father had graduated in Mechanical Engineering from FEATI University. It's worth noting that Computer Engineering evolved from the electrical engineering field, which in turn has its roots in the mechanical engineering field. Understanding these connections played a pivotal role in his decision-making process when choosing his college program. And despite not pursuing Mechanical Engineering right after senior high school, the learning he gained from this experience enhanced his general knowledge in the field of engineering. His encounter with some of the automotive technicians during his internship gave him the inspiration that passion could still be pursued despite the misalignment of your college course. A good example is one of the technicians who studied computer science but decided to take an automotive course to pursue his passion.</p>
-					<!-- <div id="machines">
-						<h2>Machines</h2>
+					<div id="machines">
+						<h2 onclick="toggleContent('hiddenContentMachines', this)">Machines ▶</h2>
 					</div>
-					<div class="articleRight">
-						<div class="articleRightInner">
-							<img src="assets/toyota_corolla.jpg" alt="Article Photo" />
+					<div id="hiddenContentMachines" class="hidden">
+						<div class="articleRight">
+							<div class="articleRightInner">
+								<img src="assets/toyota_corolla.jpg" alt="Article Photo" />
+							</div>
+							A marvel of engineering: a <a href="https://en.wikipedia.org/wiki/Toyota_Corolla_(E100)" target="blank"> 1993 Toyota Corolla XL</a> with a manual transmission. Mr. Lalusin's first car, purchased at the age of 19.
 						</div>
-						A marvel of engineering: a <a href="https://en.wikipedia.org/wiki/Toyota_Corolla_(E100)" target="blank"> 1993 Toyota Corolla XL</a> with a manual transmission. Mr. Lalusin's first car, purchased at the age of 19.
+						<p>From a tender age, Mr. Lalusin showcased an insatiable curiosity, especially towards machinery, tirelessly exploring its inner workings and daringly experimenting with electricity, even in the face of potential hazards. Undeterred by the risks, his fearlessness propelled him into endeavors that would give most adults pause, yet it was precisely these audacious undertakings that not only refined his skills but also kindled his fervent passion for engineering, shaping his destiny amidst sparks of innovation and determination.</p>
+						<p>Growing up amidst the backdrop of his family's humble junk shop enterprise, he found himself immersed in a world teeming with captivating artifacts, from archaic electronics to intricate machinery, each whispering tales of potential and possibility. Relishing the challenge of uncovering hidden treasures within discarded items, he tirelessly honed his craft, transforming salvaged components into innovative creations while quietly nurturing a dream of one day leaving an indelible mark on the world of engineering.
+						</p>
+						<p>His fervor for engineering was further fueled upon acquiring his first car, which unveiled the marvels of the internal combustion engine and opened new horizons for his inventive mind to explore. Drawing from his diverse engineering knowledge and practical skills, he ingeniously adapted solutions to everyday challenges, such as converting his vehicle into a makeshift workstation during power outages, showcasing his resourcefulness and ingenuity in the face of adversity.
+						</p>
+						<p>Although he does not identify as a mere "car enthusiast," Mr. Lalusin considers himself an aficionado of engineering in its broader sense, embracing a holistic appreciation for the intricate workings of various mechanical marvels. His ardor for the field transcends any single vehicle, epitomizing a lifelong pursuit where he can express his profound admiration for machinery while continuously seeking new avenues for innovation and exploration.</p>
 					</div>
-					<p>From a tender age, Mr. Lalusin showcased an insatiable curiosity, especially towards machinery, tirelessly exploring its inner workings and daringly experimenting with electricity, even in the face of potential hazards. Undeterred by the risks, his fearlessness propelled him into endeavors that would give most adults pause, yet it was precisely these audacious undertakings that not only refined his skills but also kindled his fervent passion for engineering, shaping his destiny amidst sparks of innovation and determination.</p>
-					<p>Growing up amidst the backdrop of his family's humble junk shop enterprise, he found himself immersed in a world teeming with captivating artifacts, from archaic electronics to intricate machinery, each whispering tales of potential and possibility. Relishing the challenge of uncovering hidden treasures within discarded items, he tirelessly honed his craft, transforming salvaged components into innovative creations while quietly nurturing a dream of one day leaving an indelible mark on the world of engineering.
-					</p>
-					<p>His fervor for engineering was further fueled upon acquiring his first car, which unveiled the marvels of the internal combustion engine and opened new horizons for his inventive mind to explore. Drawing from his diverse engineering knowledge and practical skills, he ingeniously adapted solutions to everyday challenges, such as converting his vehicle into a makeshift workstation during power outages, showcasing his resourcefulness and ingenuity in the face of adversity.
-					</p>
-					<p>Although he does not identify as a mere "car enthusiast," Mr. Lalusin considers himself an aficionado of engineering in its broader sense, embracing a holistic appreciation for the intricate workings of various mechanical marvels. His ardor for the field transcends any single vehicle, epitomizing a lifelong pursuit where he can express his profound admiration for machinery while continuously seeking new avenues for innovation and exploration.</p>
+					
 					<div id="publicSpeaking">
-						<h2>Public Speaking</h2>
+						<h2 onclick="toggleContent('hiddenContentPublicSpeaking', this)">Public Speaking ▶</h2>
 					</div>
-					<div class="articleRight">
-						<div class="articleRightInner">
-							<img src="assets/public_speaking.jpg" alt="Article Photo" />
+					<div id="hiddenContentPublicSpeaking" class="hidden">
+						<div class="articleRight">
+							<div class="articleRightInner">
+								<img src="assets/public_speaking.jpg" alt="Article Photo" />
+							</div>
+							Mr. Lalusin Attends His First Guest Speaking Event in May 2024, Just Nine Months After Earning His Bachelor's Degree.
 						</div>
-						Mr. Lalusin Attends His First Guest Speaking Event in May 2024, Just Nine Months After Earning His Bachelor's Degree.
+						<p>Despite his aversion to crowds, Mr. Lalusin deftly navigated the role of an inspirer, sharing his wealth of experience and engineering knowledge with aspiring minds. On the 29th of May 2024, he embarked on his guest speaking journey at Academia de San Antonio. He recounted his childhood fascination with dismantling and rebuilding toys, a precursor to his eventual career path in engineering. He emphasized the multifaceted nature of engineering, highlighting how it encompasses problem-solving, creativity, and innovation.</p>
+						<p>Drawing from his own experiences, Mr. Lalusin delved into the diverse branches of engineering, showcasing the breadth of opportunities within the field. From mechanical engineers designing vehicles to electrical engineers creating robotics and electrical systems, he painted a vivid picture of the possibilities awaiting the students. With enthusiasm, he shared insights into the role of computer engineers, dispelling misconceptions and revealing the exciting realm of programming, electronics, and robotics. He underscored the importance of adaptability and lifelong learning in the rapidly evolving field of technology.</p>
+						<p>In closing, Mr. Lalusin challenged the graduates to embrace their curiosity, pursue their passions, and forge their own paths in the dynamic world of engineering. He urged them to strive for excellence and innovation as they embark on their professional journeys, emphasizing the significance of their roles in shaping the future of technology and society.</p>
 					</div>
-					<p>Despite his aversion to crowds, Mr. Lalusin deftly navigated the role of an inspirer, sharing his wealth of experience and engineering knowledge with aspiring minds. On the 29th of May 2024, he embarked on his guest speaking journey at Academia de San Antonio. He recounted his childhood fascination with dismantling and rebuilding toys, a precursor to his eventual career path in engineering. He emphasized the multifaceted nature of engineering, highlighting how it encompasses problem-solving, creativity, and innovation.</p>
-					<p>Drawing from his own experiences, Mr. Lalusin delved into the diverse branches of engineering, showcasing the breadth of opportunities within the field. From mechanical engineers designing vehicles to electrical engineers creating robotics and electrical systems, he painted a vivid picture of the possibilities awaiting the students. With enthusiasm, he shared insights into the role of computer engineers, dispelling misconceptions and revealing the exciting realm of programming, electronics, and robotics. He underscored the importance of adaptability and lifelong learning in the rapidly evolving field of technology.</p>
-					<p>In closing, Mr. Lalusin challenged the graduates to embrace their curiosity, pursue their passions, and forge their own paths in the dynamic world of engineering. He urged them to strive for excellence and innovation as they embark on their professional journeys, emphasizing the significance of their roles in shaping the future of technology and society.</p> -->
 					<h2>Education</h2>
 					<div class="articleRight">
 						<div class="articleRightInner">
@@ -318,7 +341,7 @@
 				</div>
 			</div>
 			<div class="pagefooter">
-				This page was last edited on 06 DEC 2024
+				This page was last edited on 19 DEC 2024
 				<div class="footerlinks">
 					<a href="https://licaauto.com" target="_blank">Nissan</a> <a href="http://outsourcingsolutionph.com" target="_blank">OutsourcingSolutionPH.com</a> <a href="https://www.arcsyssolutions.com" target="_blank">ARCSysSolutions.com</a> <a href="https://en.hipe.asia" target="_blank">Hipe.asia</a> <a href="https://joyride.com.ph" target="_blank">JoyRide.com.ph</a>
 				</div>

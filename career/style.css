@@ -652,6 +652,10 @@ span.user {
 	height: 61px;
     margin: 5px;
 }
+.awards {
+    font-size: 0.85em; /* Adjust as needed */
+    color: #555; /* Optional: softer color */
+}
 .hidden {
     display: none;
 }

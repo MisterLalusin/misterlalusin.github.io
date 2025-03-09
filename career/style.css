@@ -657,6 +657,11 @@ span.user {
     color: #555; /* Optional: softer color */
 	margin-top: -4px;
 }
+.affiliation {
+    font-size: 0.85em; /* Adjust as needed */
+    color: #555; /* Optional: softer color */
+	margin-top: -4px;
+}
 .hidden {
     display: none;
 }
